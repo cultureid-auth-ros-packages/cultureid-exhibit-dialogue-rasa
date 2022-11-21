@@ -23,17 +23,9 @@ services:
     volumes:
       - ./actions:/app/actions
 
+  
 
-#  voicebot:
-    #build:
-      #context: ./
-      #dockerfile: Dockerfile_voicebot
-    #privileged: true
 
-    #tty: true
-    #stdin_open: true
-    #volumes:
-    #- ".:/app/"
-    #devices:
-    #- "/dev:/dev"
-#    command: python3 save_audio.py
+
+
+

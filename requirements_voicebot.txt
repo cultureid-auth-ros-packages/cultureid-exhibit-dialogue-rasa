@@ -1,4 +1,0 @@
-pyaudio
-google-cloud-speech
-google-cloud-texttospeech
-requests

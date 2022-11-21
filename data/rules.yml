@@ -25,12 +25,7 @@ rules:
   - action: form_exhibit
   - active_loop: form_exhibit
 
-# - rule: attract user and activate intro form
-#   steps:
-#   - intent: intent_greet
-#   - action: action_introduce
-#   - action: form_exhibit
-#   - active_loop: form_exhibit
+
 
 - rule: Submit exhibit form
   condition:
@@ -41,25 +36,6 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_submit_form_exhibit
-
-
-# - rule: attract user and activate intro form
-#   steps:
-#   - intent: intent_greet
-#   - action: action_introduce
-#   - action: form_user
-#   - active_loop: form_user
-
-# - rule: Submit exhibit form
-#   condition:
-#   - active_loop: form_user
-#   steps:
-#   - action: form_user
-#   - active_loop: null
-#   - slot_was_set:
-#     - requested_slot: null
-#   - action: action_submit_form_user
-
 
 
 
@@ -161,12 +137,13 @@ rules:
   - intent: intent_stop_tour
   - action: action_stop_tour
 
+
 - rule: exhibit
   steps:
   - intent: intent_exhibit
   - action: action_validate_intents
   - action: action_introduce_exhibit
-  - action: action_say_capabilities
+  - action: action_say_capabilities_1st
 
 
 - rule: current_exhibit
@@ -184,6 +161,12 @@ rules:
   steps:
   - intent: intent_how_are_you
   - action: utter_say_fine
+
+- rule: say age
+  steps:
+  - intent: intent_what_is_your_age
+  - action: utter_say_my_age
+
 
 - rule: ask for writer
   steps:
@@ -219,6 +202,12 @@ rules:
   - action: action_validate_intents
   - action: action_say_language
  
+- rule: ask for size
+  steps:
+  - intent: intent_size
+  - action: action_validate_intents
+  - action: action_say_size
+
 
 - rule: ask for importance
   steps:
@@ -234,4 +223,9 @@ rules:
   - action: action_say_content
   
 
+- rule: ask for making
+  steps:
+  - intent: intent_making
+  - action: action_validate_intents
+  - action: action_say_making
 

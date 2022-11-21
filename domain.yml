@@ -7,7 +7,9 @@ intents:
   - intent_finding
   - intent_creation
   - intent_language
+  - intent_size
   - intent_content
+  - intent_making
   - intent_affirm
   - intent_goodbye
   - intent_greet
@@ -30,120 +32,86 @@ intents:
   - intent_occupation
   - intent_how_are_you
   - intent_what_is_your_name
+  - intent_what_is_your_age
   
 
 
 responses:
 
   utter_introduce_exhibit:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text:  Ο Πάπυρος του Δερβενίου είναι αρχαίο ελληνικό χειρόγραφο και αποτελεί το αρχαιότερο βιβλίο της Ευρώπης.
+  - text:  Ο Πάπυρος του Δερβενίου θεωρείται το αρχαιότερο βιβλίο της Ευρώπης και αποτελεί ένα από τα πολυτιμότερα εκθέματα του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
   
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Ο χρυσός των Μακεδόνων αποτελεί τη μεγαλύτερη συλλογή χρυσών στεφανιών και άλλων πολύτιμων ευρημάτων από νεκροταφεία της Μακεδονίας
-
-
 
   utter_say_content:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Στον πάπυρο αναγράφεται το κείμενο ενός βιβλίου, από το οποίο δεν σώζονται ούτε η αρχή ούτε το τέλος. Η ανάγνωση του κειμένου από εξειδικευμένους ερευνητές αποδείχθηκε δύσκολη, ενώ λόγω της φθοράς του παπύρου χρειάστηκε πρώτα να φωτογραφηθούν τα σωζόμενα τμήματά του και έπειτα να διαβαστούν. Αρχικά ο συγγραφέας, ένας μάντης ή χρησμολόγος, απευθύνεται σε επίδοξους μύστες και περιγράφει τις λατρευτικές πρακτικές που σχετίζονται με τη μεταθανάτια τύχη των ψυχών, ενώ στη συνέχεια αναπτύσσεται ένας ορφικός ύμνος. Ο ύμνος αυτός συνόδευε τις τελετουργίες των μυστών, για τους οποίους προοριζόταν το βιβλίο.
-  
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Λυπάμαι, δεν διαθέτω αυτή τη πληροφορία για τον χρυσό. 
+  - text: Στον πάπυρο αναγράφεται το κείμενο ενός βιβλίου, από το οποίο δεν σώζονται ούτε η αρχή ούτε το τέλος. Αρχικά ο συγγραφέας, ένας μάντης ή χρησμολόγος, απευθύνεται σε επίδοξους μύστες και περιγράφει τις λατρευτικές πρακτικές που σχετίζονται με τη μεταθανάτια τύχη των ψυχών, ενώ στη συνέχεια αναπτύσσεται ένας ορφικός ύμνος. Ο ύμνος αυτός συνόδευε τις τελετουργίες των μυστών, για τους οποίους προοριζόταν το βιβλίο.
+
   
   utter_say_language:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Το κείμενο είναι γραμμένο με μελάνι σκούρου χρώματος σε μεγαλογράμματη γραφή και στην αττική διάλεκτο, με ορισμένα ιωνικά στοιχεία.
+  - text: Το κείμενο είναι γραμμένο με μελάνι σκούρου χρώματος σε μεγαλογράμματη γραφή και στην αττική διάλεκτο, με ορισμένα ιωνικά στοιχεία.
   
   utter_say_creation:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Η γραφή του παπύρου χρονολογείται ανάμεσα στο 340 και στο 320 προ Χριστού,  το βιβλίο όμως το οποίο αντιγράφεται σε αυτόν είναι τουλάχιστον έναν αιώνα παλαιότερο, περίπου στο 420 με 410 προ Χριστού.
+  - text: Η γραφή του παπύρου χρονολογείται ανάμεσα στο 340 και στο 320 προ Χριστού,  το βιβλίο όμως το οποίο αντιγράφεται σε αυτόν είναι τουλάχιστον έναν αιώνα παλαιότερο, περίπου στο 420 με 410 προ Χριστού.
   
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Ο χρυσός των Μακεδόνων χρονολογείται ανάμεσα στο μπλα μπλα μπλα μπλα μπλα 
 
   utter_say_exposition:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Το μοναδικό αυτό εύρημα εκτέθηκε για πρώτη φορά στο Αρχαιολογικό Μουσείο Θεσσαλονίκης το 1962. Από το 2013 ο πάπυρος φιλοξενείται στη μόνιμη έκθεση Ο Χρυσός των Μακεδόνων, και είναι τοποθετημένος σε οριζόντια προθήκη με ειδικές συνθήκες υγρασίας και θερμοκρασίας για την ασφαλή διατήρησή του. Το τμήμα του παπύρου που σώζεται και εκτίθεται στο Μουσείο έχει ύψος 9,4 εκατοστά και αποτελεί το επάνω μέρος  ενός κυλίνδρου που είχε συνολικό μήκος περίπου 3 μέτρα.
+  - text: Το μοναδικό αυτό εύρημα εκτέθηκε για πρώτη φορά στο Αρχαιολογικό Μουσείο Θεσσαλονίκης το 1962. Από το 2013 ο πάπυρος φιλοξενείται στη μόνιμη έκθεση Ο Χρυσός των Μακεδόνων, και είναι τοποθετημένος σε οριζόντια προθήκη με ειδικές συνθήκες υγρασίας και θερμοκρασίας για την ασφαλή διατήρησή του. 
   
+  utter_say_size:
+  - text: Το τμήμα του παπύρου που σώζεται και εκτίθεται στο Μουσείο έχει ύψος 9,4 εκατοστά και αποτελεί το επάνω μέρος ενός κυλίνδρου που είχε συνολικό μήκος περίπου 3 μέτρα.
+
+
   utter_say_finding:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Ο πάπυρος βρέθηκε τον Ιανουάριο του 1962 κατά την ανασκαφή ενός τάφου στο νεκροταφείο της αρχαίας Λητής, στο Δερβένι Θεσσαλονίκης, από τον ανασκαφέα Πέτρο Θέμελη.
+  - text: Ο πάπυρος βρέθηκε τον Ιανουάριο του 1962 κατά την ανασκαφή ενός τάφου στο νεκροταφείο της αρχαίας Λητής, στο Δερβένι Θεσσαλονίκης, από τον ανασκαφέα Πέτρο Θέμελη. Σύμφωνα με τα λεγόμενά του, ο πάπυρος θύμιζε καμένη εφημερίδα. Το κλίμα της Ελλάδας δεν ευνοεί τη διατήρηση παπύρων. Ωστόσο, στην περίπτωση του Δερβενίου ο πάπυρος διασώθηκε ακριβώς επειδή απανθρακώθηκε. 
   
   utter_say_importance:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Πρόκειται για το αρχαιότερο βιβλίο της Ευρώπης και αποτέλεσε την πρώτη ελληνική εγγραφή στο Διεθνή κατάλογο της Ουνέσκο «Μνήμη του Κόσμου», τον Οκτώβριο του 2015.
+  - text: Πρόκειται για το αρχαιότερο βιβλίο της Ευρώπης και αποτέλεσε την πρώτη ελληνική εγγραφή στο Διεθνή κατάλογο της Ουνέσκο «Μνήμη του Κόσμου», τον Οκτώβριο του 2015.
   
   utter_say_writer:
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Οι θεωρίες πίσω από τον συγγραφέα του βιβλίου είναι πάρα πολλές, ωστόσο η ταυτότητα του παραμένει ακόμα άγνωστη. Μία από τις εκδοχές θέλει τον συγγραφέα του βιβλίου να ταυτίζεται με τον μάντη και θεολόγο Ευθύφρωνα από τα Πρόσπαλτα Αττικής.
+  - text: Οι θεωρίες πίσω από τον συγγραφέα του βιβλίου είναι πάρα πολλές, ωστόσο η ταυτότητα του παραμένει ακόμα άγνωστη. Μία από τις εκδοχές θέλει τον συγγραφέα του βιβλίου να ταυτίζεται με τον μάντη και θεολόγο Ευθύφρωνα από τα Πρόσπαλτα Αττικής.
+  
+ 
+
+  utter_say_making:
+  - text: Ο πάπυρος προέρχεται από την επεξεργασία του φυτού Σάιπερους Παπύρους που ευδοκιμεί στα έλη του ποταμού Νείλου. Για την κατασκευή, το φυτό τεμαχιζόταν σε λεπτές λωρίδες. Αυτές τοποθετούνταν σε μια υγρή επιφάνεια ώστε μόλις να εφάπτονται, και επάνω τους ακολουθούσε μια δεύτερη στρώση λωρίδων τοποθετημένων κάθετα. Με ένα πλατύ σφυρί ένωναν τις δύο στρώσεις και στη συνέχεια το φύλλο στέγνωνε στον ήλιο. 
+
+
+  utter_say_capabilities: 
+  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πότε ανακαλύφθηκε ο πάπυρος, ποιος είναι ο συγγραφέας, ποιό το περιεχόμενο του και ότι άλλο σχετικό.
+  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πως κατασκευαζόταν ο πάπυρος, από ποιόν ανακαλύφθηκε, ποιά είναι η γλώσσα γραφής του και ότι άλλο επιθυμείς.
+  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις για τις διαστάσεις του παπύρου, ποιά είναι η αξία του, που εκτίθεται και ότι άλλο σχετικό.
+  
+  utter_say_capabilities_1st:
+  - text: Μπορώ να σου δώσω πληροφορίες σχετικά με το πότε ανακαλύφθηκε, πως κατασκευαζόταν, ποιά είναι η γλώσσα γραφής του, πότε δημιουργήθηκε, ποιος είναι ο συγγραφέας, ποιό είναι το περιεχόμενο του, ποιές είναι οι διαστάσεις του, γιατί είναι τόσο σημαντικό και που εκτίθεται.
+  - text: Μπορώ να απαντήσω σχετικά με το πότε ανακαλύφθηκε, πως κατασκευαζόταν, ποιά είναι η γλώσσα γραφής του, ποιος είναι ο συγγραφέας, πότε δημιουργήθηκε, ποιό είναι το περιεχόμενο του, ποιές είναι οι διαστάσεις του, γιατί είναι τόσο σημαντικό και που εκτίθεται.
+
   
 
 
+
+
+  utter_say_nice_to_meet_you:
+  - text: Χαίρω πολύ {name}. Επιτέλους σε γνωρίζω.
+
+  utter_guess_class:
+  - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
+
+  utter_wrong_age:
+  - text: Τί λες βρε ψεύτη. Σιγά μην είσαι και {name}. Τέλος πάντων ας σε πιστέψω.
+
+  utter_say_my_age:
+  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχούν σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
 
 
   utter_ask_form_user_slot_name:
-  - condition:
-    - type: slot
-      name: remind_slot
-      value: "slot_name"
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Ποιό είναι το όνομα σου; 
-
-  - condition:
-    - type: slot
-      name: previous_requested_slot
-      value: "slot_name"
-    text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?   
   
   - text: "Εσένα πώς σε λένε;"   
   - text: "Εσύ ποιός είσαι;"
+  - text: "Ποιό είναι το όνομά σου;"
+
 
   utter_ask_form_user_slot_age:
-  - condition:
-    - type: slot
-      name: remind_slot
-      value: "slot_age"
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Πόσω ετών είσαι; 
 
-  - condition:
-    - type: slot
-      name: previous_requested_slot
-      value: "slot_age"
-    text: Δεν κατάλαβα ακριβώς την ηλικία σου. Μπορείς να μου πεις μόνο το νούμερο αυτή τη φορά? 
-
+  - text: Πόσω ετών είσαι; 
   - text: "Ποιά είναι η ηλικία σου;" 
   - text: "Πόσο χρονών είσαι;"
 
@@ -152,174 +120,61 @@ responses:
 
   - condition:
     - type: slot
-      name: remind_slot
-      value: "slot_occupation"
-    - type: slot
       name: slot_adult
       value: False
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Μου έλεγες σε ποιά τάξη πας.
-
-
-  - condition:
-    - type: slot
-      name: remind_slot
-      value: "slot_occupation"
-    - type: slot
-      name: slot_adult
-      value: True
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Μου έλεγες με τί ασχολείσαι.
+    text: Σε ποιά τάξη είσαι;
 
   - condition:
     - type: slot
       name: slot_adult
-      value: False
-    - type: slot
-      name: remind_slot
-      value: null
-    text: Μάλλον κιεσύ πρέπει να πηγαίνεις ακόμα σχολείο. Σε ποιά τάξη είσαι;
+      value: False  
+    text: Τί τάξη πας;
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    - type: slot
-      name: remind_slot
-      value: null
-    text: Εσύ μάλλον έχεις τελειώσει το σχολείο. Με τί ασχολείσαι;
+    text: Με τί ασχολείσαι;
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    - type: slot
-      name: remind_slot
-      value: null
-    text: Εσύ μάλλον έχεις τελειώσει το σχολείο. Τί δουλειά κάνεις;
-
-
-  utter_say_my_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχούν σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+    text: Τί δουλειά κάνεις;
 
 
 
   utter_ask_form_user_slot_favorite_subject:
-  - condition:
-    - type: slot
-      name: remind_slot
-      value: "slot_favorite_subject"
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Μου έλεγες για το αγαπημένο σου μάθημα
-
-
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False
-    - type: slot
-      name: remind_slot
-      value: null
-    text: Και ποιό μάθημα σου σαρέσει πιο πολύ;
-
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False
-    - type: slot
-      name: remind_slot
-      value: null
-    text: Και ποιό είναι το αγαπημένο σου μάθημα;
+  
+  - text: Και τι θέλεις να γίνεις όταν μεγαλώσεις;
+  - text: Τί δουλειά θέλεις να κάνεις όταν μεγαλώσεις;
 
 
   utter_introduction_to_tour:
+  - text: Εμένα το όνειρό μου είναι γίνω ξεναγός. Και γιαυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για τον Πάπυρο του Δερβενίου στους επισκέπτες μας.
 
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: True
-    text: Εγώ όταν μεγαλώσω θα γίνω ξεναγός αρχαίας Ιστορίας. Μάλιστα έχω εδώ πίσω κάποια αγαλματάκια.
-
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False
-    text: Εμένα είναι η Ιστορία και πιο συγκεκριμένα η Μυθολογία. Μάλιστα έχω μια συλλογή από μικρά αγαλματάκια.
 
   utter_ask_form_exhibit_slot_interested:
   - condition:
     - type: slot
-      name: remind_slot
-      value: "slot_interested"
-    - type: slot
-      name: slot_previous_exhibit
-      value: "-"
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Ψήνεσαι να σου πω για τα εκθέματά μας; 
+      name: flag_exhibit_utters
+      value: "0"
+    text: Θα ρωτήσεις κάτι ακόμα ή θέλεις να φύγεις;
 
   - condition:
-    - type: slot
-      name: remind_slot
-      value: null
-    - type: slot
-      name: slot_previous_exhibit
-      value: "-"
-    text: Θα σε ενδιέφερε να μάθεις πληροφορίες για αυτά;
-    # text: "Θα σε ενδιέφερε να μάθεις κάποια πληροφορία για τα εκθέματα μας;" 
-
-
-  - condition:
-    - type: slot
-      name: previous_requested_slot
-      value: "slot_interested"
-    text: Δεν κατάλαβα. Σε ενδιαφέρει? Ναι ή όχι?
-  
-
-  - text: Θέλεις να συνεχίσουμε εδώ, να προχωρήσουμε σε άλλο έκθεμα ή βαρέθηκες και θες να τελειώσει η ξενάγηση;
-  
-
-  - condition: #τελοσ τα εξιμπιντς αλλα εχω ουττερς
-    - type: slot
-      name: slot_remaining_exhibits
-      value: []
     - type: slot
       name: flag_exhibit_utters
-      value: False
-    text: Θέλεις να συνεχίσουμε εδώ, να ξανά επισκεφτούμε κάποιο από τα προηγούμενα εκθέματα ή βαρέθηκες και θες να τελειώσει η ξενάγηση;
+      value: "1"
+    text: Θέλεις να συνεχίσουμε ή βαρέθηκες και θέλεις να φύγεις;
 
-
-  - condition: #τελοσ τα εξιμπιντς και τα ουττερς
-    - type: slot
-      name: slot_remaining_exhibits
-      value: []
-    - type: slot
-      name: flag_exhibit_utters
-      value: True
-    text:  Θέλεις να ξανά επισκεφτούμε κάποιο από τα προηγούμενα εκθέματα ή μπορεί να τελειώσει η ξενάγηση;
+  
+  - text: Θα σε ενδιέφερε να πω και σε σένα μερικά πραγματάκια για τον πάπυρο;
+  - text: Εσύ θα ήθελες να μάθεις για τον πάπυρο του Δερβενίου;
+  - text: Θέλεις να σου δώσω και εσένα πληροφορίες;
 
 
 
-
-
-
-  utter_ask_form_exhibit_slot_exhibit:
-  - condition:
-    - type: slot
-      name: remind_slot
-      value: "slot_exhibit"
-    text: Λοιπόν που είχαμε μείνει; Α ναι! Μου έλεγες ποιό έκθεμα σε ενδιαφέρει. Ο πάπυρος του Δερβενίου ή ο χρυσός των Μακεδόνων; 
-
-  - condition:
-    - type: slot
-      name: previous_requested_slot
-      value: "slot_exhibit"
-    # text: Θέλεις πληροφορίες, αλλά για ποιό έκθεμα;
-    text: Σε ποιό έκθεμα θέλεις να πάμε; 
-
-  - text: "Σε ποιό έκθεμα θέλεις να πάμε;"
-
-  - condition:
-    - type: slot
-      name: slot_previous_exhibit
-      value: "-"
-    text: Για ποιό από τα εκθέματα θέλεις να μάθεις? Τα διαθέσιμα εκθέματα είναι  ο πάπυρος του Δερβενίου και ο χρυσός των Μακεδόνων.
-
+  
 
   utter_say_thanks:
   - text: Ευχαριστώ πολύ. 
@@ -335,31 +190,45 @@ responses:
   
   utter_say_following:
   - text: Μπορώ όμως να σου πω το εξής.
-  - text: Εναλλακτικά όμως θα σου πω το εξής
+  - text: Εναλλακτικά όμως θα σου πω το εξής.
   
+
+
+  utter_exhibit_not_changed:
+  - text: Εντάξει {name}. Συνεχίζουμε
+
+  utter_say_ask_me:
+  - text: Ωραία {name}. Σε ακούω.
+
+
+
   utter_fallback_1st_time:
-  - condition:
-    - type: slot
-      name: requested_slot
-      value: null
-    # text: Λυπάμαι, δεν κατάλαβα. Μπορείς να επαναδιατυπώσεις ό,τι είπες;
-    text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία.
-  - text: Λυπάμαι, δεν κατάλαβα. Μπορείς να το πεις με άλλο τρόπο; Επαναλαμβάνω την τελευταία μου φράση.
+  - text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία. 
+  - text: Λυπάμαι, δεν το γνωρίζω αυτό. 
+
 
   utter_fallback_2nd_time:
-  - condition:
-    - type: slot
-      name: requested_slot
-      value: null
-    # text: Πάλι δεν κατάλαβα. Έχεις μια τελευταία προσπάθεια
-    text: Λυπάμαι ούτε αυτό το γνωρίζω
-  - text: Πάλι δεν κατάλαβα. Έχεις μια τελευταία προσπάθεια. Επαναλαμβάνω την τελευταία μου φράση για να σε διευκολύνω.
+
+  - text: Λυπάμαι ούτε αυτό το γνωρίζω. 
+  - text: Δεν διαθέτω ούτε αυτή τη πληροφορία. 
+
 
   utter_fallback_3rd_time:
-  - text: Λυπάμαι, δεν μπορούμε να συνεννοηθούμε. Καλή συνέχεια.
+  - text: Λυπάμαι δεν γνωρίζω τίποτα από ότι επιθυμείς.
+
+
+  utter_fallback_user:
+  - text: Θα σου πω από μόνος κάτι.
+  - text: Ας σου πω από μόνος μου
+
+
+
+
+
+
 
   utter_say_goodbye:
-  - text: Καλή συνέχεια. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+  - text: Καλή συνέχεια {name}. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
 
   utter_say_only_name:
   - text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?
@@ -374,79 +243,37 @@ responses:
   - text: Ακύρωση Επανακίννησης
 
   utter_react_to_silence_1st:
-  - condition:
-    - type: slot
-      name: requested_slot
-      value: null
-    text: Ειιι, είσαι ακόμα εδώ;
-  - text: Ειιι, είσαι ακόμα εδώ; Επαναλαμβάνω
-  - text: Είναι κανείς εδώ;; Επαναλαμβάνω
+  - text: Ε ψιτ {name}, είσαι ακόμα εδώ; 
+  - text: Ψιτ ψιτ {name}, είσαι ακόμα εδώ; 
+  - text: Είσαι ακόμα εδώ {name};; 
 
   utter_react_to_silence_2nd:
-  - text: Χμμμ. Μάλλον έφυγες. Αντίο λοιπόν.
+  - text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο {name}.
 
-  utter_exhibit_changed: 
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Ωραία πάμε να μιλήσουμε για τον πάπυρο. 
-
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Ωραία πάμε να μιλήσουμε για τον χρυσό.
+  utter_repeat:
+  - text: Επαναλαμβάνω
 
 
-  utter_exhibit_not_changed: 
-
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Ωραία λοιπόν συνεχίζουμε για τον πάπυρο.
-   
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Ωραία λοιπόν συνεχίζουμε για τον χρυσό.
-
-
-  utter_say_capabilities: 
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "πάπυρος"
-    text: Μπορώ να σου πω για τον συγγραφέα, για το έτος που ανακαλύφθηκε. Κάνε μου ερωτήσεις όπως πότε εφευρέθηκε, που εκτίθεται και εγώ θα σου απαντήσω.
-
-  - condition:
-    - type: slot
-      name: slot_exhibit
-      value: "χρυσός"
-    text: Μπορώ να σου πώ για για το έτος που ανακαλύφθηκε και μπλα μπλα.
 
 
   utter_silent_user:
-  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου.
+  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου κάτι.
   - text: Θα σου πω από μόνος μου κάτι αφού δεν ρωτάς εσύ.
 
-  utter_exhibit_finish:
-  - text: Έχουμε καλύψει τα πάντα από αυτό το έκθεμα. 
-  
-  utter_suggest_move_exhibit:
-  - text: Λέω να προχωρήσουμε στο επόμενο.
 
-  utter_all_exhibits_finish:
-  - text: Με αυτά και μαυτά τελειώσαμε από όλα τα εκθέματα.
+
+
+  utter_exhibit_finish:
+  - text: Νομίζω έχουμε καλύψει τα πάντα από τον πάπυρο. 
+  
+  utter_exhibit_enough:
+  - text: Νομίζω έμαθες πολλά για τον πάπυρο σήμερα.
+  - text: Νομίζω είπαμε αρκετά.
+  - text: Νομίζω πολλές πληροφορίες πήρες από τον πάπυρο.
 
   utter_say_available_exhibits:
   - text: Τα διαθέσιμα εκθέματα είναι ο πάπυρος του Δερβενίου και ο χρυσός των Μακεδόνων.
 
-  utter_follow_me:
-  - text: Ακολούθησέ με
-  - text: Πάμε λοιπόν
   
   utter_say_current_exhibit:
   - text: Αυτή τη στιγμή μιλάμε για τον πάπυρο
@@ -455,16 +282,15 @@ responses:
   - text: Νομίζω είπαμε αρκετά.
 
   utter_end_of_tour:
-  # - text: Κάπου εδώ η ξενάγηση μας τελειώνει. Καλύψαμε όλα τα εκθέματα.
+  - text: Κάπου εδώ η ξενάγηση μας τελειώνει.
   - text: Η ξενάγηση μας έφτασε στο τέλος.
 
-  utter_was_last_exhibit:
-  - text: Αυτό ήταν και το τελευταίο έκθεμα της ξενάγησης μας.
-  - text: Φτάσαμε στο τέλος της ξενάγησης.
-  - text: Κάπου εδώ ολοκληρώθηκε η ξενάγηση.
 
-  utter_is_last_exhibit:
-  - text: Βρισκόμαστe στο τελευταίο έκθεμα της ξενάγησης μας.
+
+
+
+
+
   
   utter_say_name:
   - text: Με λένε Ίντι. Είμαι το ρομπότ του μουσείου.
@@ -484,12 +310,14 @@ responses:
 
 
 actions:
+  - action_say_making
   - action_say_writer
   - action_say_importance
   - action_say_finding
   - action_say_exposition
   - action_say_creation
   - action_say_language
+  - action_say_size
   - action_say_content
   - action_introduce
   - action_say_goodbye
@@ -532,7 +360,9 @@ actions:
   - action_no_change_exhibit
   - action_set_flag_exhibit_utters
   - action_introduce_exhibit
-
+  - action_set_slot_rule_intents
+  - action_set_slot_papyrus_intents
+  - action_say_capabilities_1st
 
 entities:
   - entity_name
@@ -587,21 +417,6 @@ slots:
     - type: custom
       action: action_set_slot_interested
 
-  slot_exhibit:
-    type: any
-    mappings:
-    - type: custom
-      action: action_set_slot_exhibit
-
-
-
-  slot_previous_exhibit:
-    type: any
-    initial_value: "-"
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_previous_exhibit
 
 
   slot_fallback_count:
@@ -612,19 +427,7 @@ slots:
     - type: custom
       action: action_set_slot_fallback_count
 
-  previous_requested_slot:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_previous_requested_slot
-    
-  remind_slot:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_remind_slot
+ 
 
   slot_silence_count:
     type: float
@@ -634,53 +437,50 @@ slots:
     - type: custom
       action: action_set_slot_silence_count
 
-  slot_list_intents:
-    type: any
-    initial_value: ["intent_ask_current_exhibit", "intent_exhibit","intent_writer", "intent_importance", "intent_finding" , "intent_exposition", "intent_creation", "intent_language", "intent_content"]
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_list_intents
-
-  slot_remaining_exhibits:
-    type: any
-    initial_value: ["πάπυρος", χρυσός]
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_remaining_exhibits
-
-  slot_available_exhibits:
-    type: any
-    initial_value: ["πάπυρος", χρυσός]
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_available_exhibits
-
-  slot_list_exhibit_utters:
-    type: any
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_list_exhibit_utters
-
-  slot_list_available_exhibit_utters:
-    type: any
-    initial_value: [["utter_say_writer", "utter_say_importance", "utter_say_finding" , "utter_say_exposition", "utter_say_creation", "utter_say_language", "utter_say_content"],["utter_say_content"]]
-    influence_conversation: false
-    mappings:
-    - type: custom
-      action: action_set_slot_list_available_exhibit_utters
 
   flag_exhibit_utters:
     type: any
-    initial_value: false
+    initial_value: "2"
     influence_conversation: false
     mappings:
     - type: custom
       action: action_set_flag_exhibit_utters
 
+
+
+  slot_list_intents:
+    type: any
+    initial_value: ["intent_ask_current_exhibit", "intent_exhibit","intent_writer", "intent_importance", "intent_finding" , "intent_exposition", "intent_creation", "intent_language", "intent_content", "intent_making"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_list_intents
+
+
+
+  slot_list_exhibit_utters:
+    type: any
+    initial_value: ["utter_say_writer", "utter_say_importance", "utter_say_finding" , "utter_say_exposition", "utter_say_creation", "utter_say_language", "utter_say_content", "utter_say_making", "utter_say_size"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_list_exhibit_utters
+
+  slot_rule_intents:
+    type: any
+    initial_value: ["intent_stop_tour", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_rule_intents
+
+  slot_papyrus_intents:
+    type: any
+    initial_value: ["intent_ask_current_exhibit", "intent_exhibit","intent_writer", "intent_importance", "intent_finding" , "intent_exposition", "intent_creation", "intent_language", "intent_content", "intent_making", "intent_size"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_papyrus_intents
 
 
 forms:
@@ -696,5 +496,5 @@ forms:
   form_exhibit:
     required_slots:
       - slot_interested
-      - slot_exhibit
+
   
