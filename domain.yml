@@ -90,8 +90,10 @@ responses:
 
 
   utter_say_nice_to_meet_you:
-  - text: Χαίρω πολύ {name}. Επιτέλους σε γνωρίζω.
+  - text: Χαίρω πολύ {name}. 
+  - text: Επιτέλους σε γνωρίζω {name}.
 
+  
   utter_guess_class:
   - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
 
@@ -267,9 +269,9 @@ responses:
   - text: Νομίζω έχουμε καλύψει τα πάντα από τον πάπυρο. 
   
   utter_exhibit_enough:
-  - text: Νομίζω έμαθες πολλά για τον πάπυρο σήμερα.
-  - text: Νομίζω είπαμε αρκετά.
-  - text: Νομίζω πολλές πληροφορίες πήρες από τον πάπυρο.
+  - text: Δεν ξέρω αν κουράστηκες με τόσες πολλές πληροφορίες.
+  - text: Ήδη καλύψαμε πολλά πράγματα για τον πάπυρο.
+
 
   utter_say_available_exhibits:
   - text: Τα διαθέσιμα εκθέματα είναι ο πάπυρος του Δερβενίου και ο χρυσός των Μακεδόνων.
@@ -363,6 +365,8 @@ actions:
   - action_set_slot_rule_intents
   - action_set_slot_papyrus_intents
   - action_say_capabilities_1st
+  - action_set_slot_iterate_count
+
 
 entities:
   - entity_name
@@ -468,7 +472,7 @@ slots:
 
   slot_rule_intents:
     type: any
-    initial_value: ["intent_stop_tour", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye"]
+    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye"]
     influence_conversation: false
     mappings:
     - type: custom
@@ -476,12 +480,19 @@ slots:
 
   slot_papyrus_intents:
     type: any
-    initial_value: ["intent_ask_current_exhibit", "intent_exhibit","intent_writer", "intent_importance", "intent_finding" , "intent_exposition", "intent_creation", "intent_language", "intent_content", "intent_making", "intent_size"]
+    initial_value: ["intent_writer", "intent_importance", "intent_finding" , "intent_exposition", "intent_creation", "intent_language", "intent_content", "intent_making", "intent_size"]
     influence_conversation: false
     mappings:
     - type: custom
       action: action_set_slot_papyrus_intents
 
+  slot_iterate_count: 
+    type: any
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_iterate_count
 
 forms:
   form_user:

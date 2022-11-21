@@ -31,28 +31,29 @@ class ActivateExhibitForm(Action):
 
         print("action_iterate_form_exhibit")
         slot_list_exhibit_utters = tracker.slots.get("slot_list_exhibit_utters")
-        slot_exhibit = tracker.slots.get("slot_exhibit")
+        slot_iterate_count = tracker.slots.get("slot_iterate_count")
 
-
+        slot_iterate_count = slot_iterate_count + 1
 
         if len(slot_list_exhibit_utters)==0:
 
             flag_exhibit_utters = "0"
             dispatcher.utter_message(response="utter_exhibit_finish")
 
-            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
+            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_iterate_count", slot_iterate_count), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
 
-        elif (len(slot_list_exhibit_utters)<=4) and (np.mod(len(slot_list_exhibit_utters),2)==0):
+        #elif (len(slot_list_exhibit_utters)<=4) and (np.mod(len(slot_list_exhibit_utters),3)==0):
+        elif (slot_iterate_count>4) and (np.mod(slot_iterate_count,3)==0):
 
             flag_exhibit_utters = "1"
             dispatcher.utter_message(response="utter_exhibit_enough")
 
-            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
+            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_iterate_count", slot_iterate_count), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
 
 
         else:
             flag_exhibit_utters = "2"
-            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), FollowupAction("action_listen")]
+            return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_iterate_count", slot_iterate_count), FollowupAction("action_listen")]
 
 
 
@@ -966,7 +967,9 @@ class ActionReactToSilence(Action):
                                 
                 dispatcher.utter_message(response=selected_utter)
 
-                if not((len(exhibit_utters)<=4) and (np.mod(len(exhibit_utters),2)==0)):
+                flag_exhibit_utters = tracker.slots.get("flag_exhibit_utters")
+
+                if not (flag_exhibit_utters=="1"):
                     dispatcher.utter_message(response="utter_say_capabilities") 
                 
 
@@ -1079,6 +1082,19 @@ class ActionSubmitFormExhibit(Action):
         if slot_name == None:
             slot_name = " "
 
+        latest_message = tracker.latest_message
+        intent = latest_message["intent"].get("name") 
+        papyrus_intents = tracker.slots.get("slot_papyrus_intents")
+        flag_exhibit_utters = tracker.slots.get("flag_exhibit_utters")
+        
+        if (intent in papyrus_intents) and (flag_exhibit_utters!="2"):
+        
+            action = "action_say_" + intent[7:]     
+            return [FollowupAction(action)]
+
+
+        flag_exhibit_utters = tracker.slots.get("flag_exhibit_utters")
+
         if (slot_interested == False):
 
             dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
@@ -1088,12 +1104,12 @@ class ActionSubmitFormExhibit(Action):
             
             exhibit_utters = tracker.slots.get("slot_list_exhibit_utters")
 
-            if len(exhibit_utters)==0:
+            if (flag_exhibit_utters=="0"):
 
                 dispatcher.utter_message(response="utter_say_ask_me", name=slot_name)            
                 return []
 
-            elif (len(exhibit_utters)<=4) and (np.mod(len(exhibit_utters),2)==0):
+            elif (flag_exhibit_utters=="1"):
                 
                 i = random.randint(0, len(exhibit_utters)-1 )	
                 selected_utter=exhibit_utters[i]
@@ -1228,6 +1244,14 @@ class ActionSetSlotPapyrusIntents(Action):
         
         return []
 
+
+class ActionSetSlotIterate(Action):
+    def name(self):
+        return "action_set_slot_iterate_count"  
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
+        
+        return []
 
 
 class ActionValidateAction(Action):
