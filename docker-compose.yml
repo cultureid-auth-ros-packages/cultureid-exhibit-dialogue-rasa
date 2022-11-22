@@ -2,31 +2,32 @@ version: '3.0'
 
 services:
 
+## uncomment to train
+#  rasa:
+    #build:
+      #context: ./
+      #dockerfile: Dockerfile_rasa
+    #ports:
+    #- "5005:5005"
+    #volumes:
+    #- ".:/app/"   #gia na parei ta arxeia kai to model
+    #command: train --domain domain.yml --data data --out models
 
-  rasa:
-    build:
-      context: ./
-      dockerfile: Dockerfile_rasa
-    ports:
-    - "5005:5005"
-    volumes:
-    - ".:/app/"   #gia na parei ta arxeia kai to model
-    command: ["run", "--enable-api"]
+   rasa:
+     build:
+       context: ./
+       dockerfile: Dockerfile_rasa
+     ports:
+     - "5005:5005"
+     volumes:
+     - ".:/app/"   #gia na parei ta arxeia kai to model
+     command: ["run", "--enable-api"]
 
-  action-server:
-    build:
-      context: ./
-      dockerfile: Dockerfile_rasa_sdk
-    ports:
-      - 5055:5055
-    volumes:
-      - ./actions:/app/actions
-
-
-
-  
-
-
-
-
-
+   action-server:
+     build:
+       context: ./
+       dockerfile: Dockerfile_rasa_sdk
+     ports:
+       - 5055:5055
+     volumes:
+       - ./actions:/app/actions
