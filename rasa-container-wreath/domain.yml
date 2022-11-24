@@ -1,0 +1,483 @@
+version: "3.1"
+
+intents:
+  - intent_burial
+  - intent_importance
+  - intent_dating
+  - intent_creation
+  - intent_acquisition
+  - intent_material
+  - intent_use
+  - intent_affirm
+  - intent_goodbye
+  - intent_greet
+  - intent_deny
+  - intent_reset_slots
+  - intent_name
+  - intent_age
+  - intent_exhibit
+  - intent_start_conversation
+  - intent_all
+  - intent_whatever
+  - nlu_fallback
+  - intent_silence
+  - intent_repeat
+  - intent_say_available_exhibits
+  - intent_ask_current_exhibit
+  - intent_stop_tour
+  - intent_subject
+  - intent_occupation
+  - intent_how_are_you
+  - intent_what_is_your_name
+  - intent_what_is_your_age
+  
+
+
+responses:
+
+  utter_introduce_exhibit:
+  - text: Το Αρχαιολογικό Μουσείο Θεσσαλονίκης φιλοξενεί τη μεγαλύτερη στον κόσμο συλλογή χρυσών στεφανιών της κλασικής και ελληνιστικής περιόδου. Το χρυσό στεφάνι ανθισμένης μυρτιάς που εκτίθεται αποτελεί ένα από τα πιο πλούσια στολισμένα στεφάνια που έχει σωθεί από την αρχαιότητα.
+
+  utter_say_acquisition:
+  - text: Το χρυσό στεφάνι είναι προϊόν λαθρανασκαφής και πιθανώς προέρχεται από τάφο στην Κεντρική Μακεδονία, ο οποίος θα ανήκε σε σημαντικό πρόσωπο της μακεδονικής αριστοκρατίας. Διακινήθηκε παράνομα στο εξωτερικό και το 1993 αγοράστηκε από το μουσείο Jean Paul Getty των Ηνωμένων Πολιτειών Αμερικής. Το 2007 επαναπατρίστηκε στην Ελλάδα, μετά από διαπραγματεύσεις του ελληνικού Υπουργείου Πολιτισμού δημοσιογράφων, δικηγόρων και αρχαιολόγων.
+  
+  utter_say_dating:
+  - text: Το στεφάνι χρονολογείται στο τέλος του 4ου αιώνα προ Χριστού. Η μεγαλύτερη διάδοσή των χρυσών στεφανιών υπήρξε στο διάστημα 350 με 300 προ Χριστού. Είναι η περίοδος που η οικονομία του Μακεδονικού βασιλείου ακμάζει ως συνέπεια των κατακτήσεων του Μεγάλου Αλεξάνδρου. Παράλληλα, η αφθονία πολύτιμων μετάλλων στη Μακεδονία ευνόησε την ανάπτυξη τοπικών εργαστηρίων. Αρχικά, τα στεφάνια ήταν πολύ πλούσια και επιμελώς διακοσμημένα, αλλά από τις αρχές του τρίτου αιώνα προ Χριστού παρατηρείται η τάση για πιο απλές κατασκευές.
+  
+  utter_say_creation:
+  - text: Με βάση την τεχνοτροπία και την τεχνική κατασκευής του, το στεφάνι αποδίδεται σε εργαστήριο της ευρύτερης περιοχής της Θεσσαλονίκης. Το στεφάνι αποτελείται από δύο σωληνωτά στελέχη που στο πίσω μέρος της κεφαλής δέθηκαν σφικτά με χρυσό σύρμα, ενώ στο εμπρός μέρος συνδέθηκαν με διπλό χρυσό σύρμα στη μορφή του λεγόμενου «ηράκλειου κόμβου»,  σαν τον κόμπο δηλαδή  που σχημάτιζε η λεοντή του Ηρακλή.  Στη στεφάνη σώζονται στερεωμένα 26 κλαδιά με φύλλα μυρτιάς και 135 άνθη επτά τύπων.  
+ 
+  utter_say_material:
+  - text: Το στεφάνι είναι κατασκευασμένο από χρυσό. Η εντυπωσιακή πολυχρωμία του επιτυγχάνεται με τη χρήση κυανού ή πράσινου σμάλτου σε μερικά πέταλα, ενώ οι χρυσοί στήμονες απολήγουν σε χρυσά ή γυάλινα σφαιρίδια, κυανού ή λευκού χρώματος.  Εκτός από τα χρυσά στεφάνια, υπήρχαν και ασημένια, αλλά και επιχρυσωμένα από μπρούντζο, ξύλο και πηλό.
+
+  utter_say_importance:
+  - text: Το χρυσό στεφάνι μυρτιάς υπήρξε προϊόν λαθρανασκαφής και αρχαιοκαπηλίας. Είναι ιδιαίτερα σημαντικό το γεγονός ότι μετά από δεκαετίες εντοπίστηκε, διεκδικήθηκε και με τις απαραίτητες νόμιμες διαδικασίες επέστρεψε στη χώρα μας. 
+
+  utter_say_use:
+  - text: Τα χρυσά στεφάνια ανήκαν σε πλούσιες και αριστοκρατικές οικογένειες, δηλώνοντας έτσι την υψηλή κοινωνική ή οικονομική τους θέση. Τα φορούσαν σε γάμους, συμπόσια και άλλου είδους κοινωνικές εκδηλώσεις. Αφιερώνονταν, επίσης, από τους πιστούς σε ιερά,  προσφέρονταν ως έπαθλα αγώνων, ενώ είχαν και θρησκευτικό χαρακτήρα. 
+
+  utter_say_burial:
+  - text: Τα περισσότερα χρυσά στεφάνια προέρχονται από πλούσιους τάφους τόσο ανδρών όσο και γυναικών στη Μακεδονία, υποδηλώνοντας την ισχυρή κοινωνική θέση που κατείχαν εν ζωή. Τα στεφάνια συνόδευαν το νεκρό ως έπαθλο για τον αγώνα της ζωής, με τον τρόπο που στεφανώνονταν οι αθλητές των αγώνων. Ταυτόχρονα, προστάτευαν το νεκρό ή τη νεκρή στο ταξίδι τους στον άλλο κόσμο.
+
+
+
+  utter_say_capabilities: 
+  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις από τι υλικό είναι κατασκευασμένο το στεφάνι, πως αποκτήθηκε από το μουσείο, γιατί είναι τόσο σημαντικό και ότι άλλο σχετικό.
+  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πώς συνδέεται το στεφάνι με ταφικές τελετουργίες, πότε χρονολογείται, για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα και ότι άλλο επιθυμείς.
+  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις για πως αποκτήθηκε το στεφάνι από το μουσείο, πως κατασκευάστηκε, πότε χρονολογείται και ότι άλλο σχετικό.
+  
+  utter_say_capabilities_1st:
+  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Μπορώ να σου δώσω πληροφορίες σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πως αποκτήθηκε από το μουσείο, για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα, γιατί είναι τόσο σημαντικό και πώς συνδέονται τα στεφάνια με τις ταφικές τελετουργίες.
+  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Μπορώ να απαντήσω σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πως αποκτήθηκε, για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα, γιατί είναι τόσο σημαντικό και πώς συνδέονται τα στεφάνια με τις ταφικές τελετουργίες.
+
+  
+
+
+
+
+  utter_say_nice_to_meet_you:
+  - text: Χαίρω πολύ {name}.
+  - text: Επιτέλους σε γνωρίζω {name}.
+
+  
+  utter_guess_class:
+  - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
+
+  utter_wrong_age:
+  - text: Τί λες βρε ψεύτη. Σιγά μην είσαι και {name}. Τέλος πάντων ας σε πιστέψω.
+
+  utter_say_my_age:
+  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχούν σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+
+
+  utter_ask_form_user_slot_name:
+  
+  - text: "Εσένα πώς σε λένε;"   
+  - text: "Εσύ ποιός είσαι;"
+  - text: "Ποιό είναι το όνομά σου;"
+
+
+  utter_ask_form_user_slot_age:
+
+  - text: Πόσων ετών είσαι; 
+  - text: "Ποιά είναι η ηλικία σου;" 
+  - text: "Πόσων χρόνων είσαι;"
+
+
+  utter_ask_form_user_slot_occupation:
+
+  - condition:
+    - type: slot
+      name: slot_adult
+      value: False
+    text: Σε ποιά τάξη είσαι;
+
+  - condition:
+    - type: slot
+      name: slot_adult
+      value: False  
+    text: Τί τάξη πας;
+
+  - condition:
+    - type: slot
+      name: slot_adult
+      value: True
+    text: Με τί ασχολείσαι;
+
+  - condition:
+    - type: slot
+      name: slot_adult
+      value: True
+    text: Τί δουλειά κάνεις;
+
+
+
+  utter_ask_form_user_slot_favorite_subject:
+  
+  - text: Και τι θέλεις να γίνεις όταν μεγαλώσεις;
+  - text: Τί δουλειά θέλεις να κάνεις όταν μεγαλώσεις;
+
+
+  utter_introduction_to_tour:
+  - text: Εμένα το όνειρό μου είναι γίνω ξεναγός. Και γιαυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το χρυσό στεφάνι μυρτιάς στους επισκέπτες μας.
+
+
+  utter_ask_form_exhibit_slot_interested:
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "0"
+    text: Θα ρωτήσεις κάτι ακόμα ή θέλεις να φύγεις;
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "1"
+    text: Θέλεις να συνεχίσουμε ή βαρέθηκες και θέλεις να φύγεις;
+
+  
+  - text: Θα σε ενδιέφερε να πω και σε σένα μερικά πραγματάκια για το στεφάνι;
+  - text: Εσύ θα ήθελες να μάθεις για το χρυσό στεφάνι μυρτιάς;
+  - text: Θέλεις να σου δώσω και εσένα πληροφορίες χρυσό στεφάνι;
+
+
+
+  
+
+  utter_say_thanks:
+  - text: Ευχαριστώ πολύ. 
+  utter_say_thanks_deny:
+  - text: Εντάξει. Καλή συνέχεια.
+
+  utter_introduce:
+  - text: Γεια σου. Είμαι ο Ίντι, το ρομπότ του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
+
+ 
+
+  
+  utter_say_following:
+  - text: Μπορώ όμως να σου πω το εξής.
+  - text: Εναλλακτικά όμως θα σου πω το εξής.
+  
+
+
+  utter_exhibit_not_changed:
+  - text: Εντάξει {name}. Συνεχίζουμε
+
+  utter_say_ask_me:
+  - text: Ωραία {name}. Σε ακούω.
+
+
+
+  utter_fallback_1st_time:
+  - text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία. 
+  - text: Λυπάμαι, δεν το γνωρίζω αυτό. 
+
+
+  utter_fallback_2nd_time:
+
+  - text: Λυπάμαι ούτε αυτό το γνωρίζω. 
+  - text: Δεν διαθέτω ούτε αυτή τη πληροφορία. 
+
+
+  utter_fallback_3rd_time:
+  - text: Λυπάμαι δεν γνωρίζω τίποτα από ότι επιθυμείς.
+
+
+  utter_fallback_user:
+  - text: Θα σου πω από μόνος κάτι.
+  - text: Ας σου πω από μόνος μου
+
+
+
+
+
+
+
+  utter_say_goodbye:
+  - text: Καλή συνέχεια {name}. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+
+  utter_say_only_name:
+  - text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?
+
+  utter_ask_confirmation_to_reset:
+  - text: Είσαι σίγουρος ότι θέλεις να κάνω επανακίνηση;
+
+  utter_reset_slots:
+  - text: Επανακίννηση
+
+  utter_abort_reset:
+  - text: Ακύρωση Επανακίννησης
+
+  utter_react_to_silence_1st:
+  - text: Ε ψιτ {name}, είσαι ακόμα εδώ; 
+  - text: Ψιτ ψιτ {name}, είσαι ακόμα εδώ; 
+  - text: Είσαι ακόμα εδώ {name};; 
+
+  utter_react_to_silence_2nd:
+  - text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο {name}.
+
+  utter_repeat:
+  - text: Επαναλαμβάνω
+
+
+
+
+  utter_silent_user:
+  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου κάτι.
+  - text: Θα σου πω από μόνος μου κάτι αφού δεν ρωτάς εσύ.
+
+
+
+
+  utter_exhibit_finish:
+  - text: Νομίζω έχουμε καλύψει τα πάντα για το χρυσό στεφάνι. 
+  
+  utter_exhibit_enough:
+  - text: Δεν ξέρω αν κουράστηκες με τόσες πολλές πληροφορίες.
+  - text: Ήδη καλύψαμε πολλά πράγματα για το στεφάνι.
+
+
+
+
+  
+  utter_say_current_exhibit:
+  - text: Αυτή τη στιγμή μιλάμε για το χρυσό στεφάνι μυρτιάς.
+
+  utter_exhibit_utters_enough:
+  - text: Νομίζω είπαμε αρκετά.
+
+  utter_end_of_tour:
+  - text: Κάπου εδώ η ξενάγηση μας τελειώνει.
+  - text: Η ξενάγηση μας έφτασε στο τέλος.
+
+
+
+
+
+
+
+  
+  utter_say_name:
+  - text: Με λένε Ίντι. Είμαι το ρομπότ του μουσείου.
+
+  utter_say_age:
+  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχούν σε οχτώμιση δικά σας ανθρώπινα χρόνια.
+
+  utter_say_occupation:
+  - text: Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+
+  utter_say_favorite_subject:
+  - text: Καλό και αυτό. Το δικό μου αγαπημένο μάθημα είναι η Ιστορία.
+
+  utter_say_fine:
+  - text: Είμαι πολύ χαρούμενος που μου κάνεις παρέα.
+
+
+
+actions:
+  - action_say_burial
+  - action_say_use
+  - action_say_importance
+  - action_say_material
+  - action_say_acquisition
+  - action_say_creation
+  - action_say_dating
+
+  - action_introduce
+  - action_say_goodbye
+  - action_reset_slots
+  - validate_form_user
+  - action_say_thanks
+  - action_say_thanks_deny
+  - action_set_slot_name
+  - action_set_slot_age
+  - action_set_slot_interested
+  - action_set_slot_exhibit
+  - action_fallback
+  - action_ask_confirmation_to_reset
+  - action_abort_reset
+  - action_set_previous_requested_slot
+  - action_set_remind_slot
+  - action_react_to_silence
+  - action_set_slot_silence_count
+  - action_random_say
+  - action_say_capabilities
+  - action_submit_form_user
+  - action_submit_exhibit_user
+  - action_validate_intents
+  - action_repeat
+  - action_set_slot_list_exhibit_utters
+  - action_set_slot_available_exhibits
+  - action_set_slot_remaining_exhibits
+  - action_set_slot_list_available_exhibit_utters
+  - action_say_available_exhibits
+  - action_set_slot_previous_exhibit
+  - action_say_current_exhibit
+  - action_submit_form_exhibit
+  - action_iterate_form_exhibit
+  - validate_form_exhibit
+  - action_stop_tour
+  - action_set_slot_favorite_subject
+  - action_set_slot_occupation
+  - action_set_slot_adult
+  - action_no_change_exhibit
+  - action_set_flag_exhibit_utters
+  - action_introduce_exhibit
+  - action_set_slot_rule_intents
+  - action_set_slot_wreath_intents
+  - action_say_capabilities_1st
+  - action_set_slot_iterate_count
+  - action_say_exhibit
+
+
+entities:
+  - entity_name
+  - entity_age
+  - entity_subject
+  - entity_occupation
+  - entity_exhibit
+  - PERSON
+  - GPE
+  - ORG
+  - LOC
+  - EVENT
+  - PRODUCT
+
+
+
+slots:
+
+  slot_name:
+    type: any
+    mappings:
+    - type: custom
+      action: action_set_slot_name
+
+  slot_age:
+    type: any
+    mappings:
+    - type: custom
+      action: action_set_slot_age
+  
+  slot_occupation:
+    type: any
+    mappings:
+    - type: custom
+      action: action_set_slot_occupation
+
+  slot_favorite_subject: 
+    type: any
+    mappings:
+    - type: custom
+      action: action_set_slot_favorite_subject
+
+  slot_adult:
+    type: bool
+    mappings:
+    - type: custom
+      action: action_set_slot_adult
+
+  slot_interested:
+    type: any
+    mappings:
+    - type: custom
+      action: action_set_slot_interested
+
+
+
+  slot_fallback_count:
+    type: float
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_fallback_count
+
+ 
+
+  slot_silence_count:
+    type: float
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_silence_count
+
+
+  flag_exhibit_utters:
+    type: any
+    initial_value: "2"
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_flag_exhibit_utters
+
+
+  slot_list_exhibit_utters:
+    type: any
+    initial_value: ["utter_say_material", "utter_say_importance", "utter_say_creation", "utter_say_use", "utter_say_acquisition", "utter_say_dating", "utter_say_burial"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_list_exhibit_utters
+
+  slot_rule_intents:
+    type: any
+    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_exhibit"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_rule_intents
+
+  slot_wreath_intents:
+    type: any
+    initial_value: ["intent_material", "intent_importance", "intent_creation", "intent_use", "intent_acquisition", "intent_dating", "intent_burial"]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_wreath_intents
+
+  slot_iterate_count: 
+    type: any
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_iterate_count
+
+forms:
+  form_user:
+    required_slots:
+      - slot_name
+      - slot_age
+      - slot_occupation
+      - slot_favorite_subject
+
+      
+
+  form_exhibit:
+    required_slots:
+      - slot_interested
+
+  
