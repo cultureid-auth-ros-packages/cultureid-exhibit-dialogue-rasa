@@ -43,7 +43,7 @@ class ActivateExhibitForm(Action):
             return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_iterate_count", slot_iterate_count), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
 
         #elif (len(slot_list_exhibit_utters)<=4) and (np.mod(len(slot_list_exhibit_utters),3)==0):
-        elif (slot_iterate_count>4) and (np.mod(slot_iterate_count,2)==0):
+        elif (slot_iterate_count >= 4) and (np.mod(slot_iterate_count,2)==0):
 
             flag_exhibit_utters = "1"
             dispatcher.utter_message(response="utter_exhibit_enough")
@@ -86,7 +86,7 @@ class Sayburial(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_burial")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
         
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
 
@@ -113,7 +113,7 @@ class Saydating(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_dating")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
         
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
 
@@ -141,7 +141,7 @@ class SayImportance(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_importance")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
 
 
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
@@ -169,7 +169,7 @@ class Sayacquisition(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_acquisition")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
 
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
 
@@ -196,7 +196,7 @@ class Sayuse(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_use")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
 
 
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
@@ -225,7 +225,7 @@ class SayCreation(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_creation")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
 
 
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
@@ -254,7 +254,7 @@ class Saymaterial(Action):
         else: 
         
             dispatcher.utter_message(response="utter_say_material")
-            # dispatcher.utter_message(response="utter_say_capabilities")
+            
 
 
         return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
@@ -285,7 +285,7 @@ class SayBye(Action):
 
         slot_name = tracker.slots.get("slot_name")
         if slot_name == None:
-            slot_name = " "
+            slot_name = ""
 
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()]
@@ -362,9 +362,9 @@ class ValidateForm(FormValidationAction):
         print("validate_slot_name")
 
         if slot_value == None:
-            slot_value = " "
+            slot_value = ""
 
-        if slot_value==" ":
+        if slot_value=="":
             dispatcher.utter_message(response="utter_say_nice_to_meet_you", name = slot_value)
 
         else:
@@ -530,7 +530,7 @@ class ActionSetSlotName(Action):
 
                 
                 # text = latest_message["text"]
-                return [SlotSet("slot_name", " ")]
+                return [SlotSet("slot_name", "")]
 
 
         latest_message = tracker.latest_message
@@ -769,7 +769,7 @@ class ResetSlots(Action):
 
         slot_name = tracker.slots.get("slot_name")
         if slot_name == None:
-            slot_name = " "
+            slot_name = ""
         # dispatcher.utter_message(response="utter_reset_slots")
         
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
@@ -836,7 +836,7 @@ class ActionFallback(Action):
                 slot_name = tracker.slots.get("slot_name")
                 
                 if slot_name == None:
-                    slot_name = " "
+                    slot_name = ""
 
                 dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
                 
@@ -847,7 +847,7 @@ class ActionFallback(Action):
             slot_name = tracker.slots.get("slot_name")
 
             if slot_name == None:
-                slot_name = " "
+                slot_name = ""
 
             dispatcher.utter_message(response="utter_fallback_3rd_time")
             dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
@@ -906,7 +906,7 @@ class ActionReactToSilence(Action):
         slot_exhibit = tracker.slots.get("slot_exhibit")
         slot_name = tracker.slots.get("slot_name")
         if slot_name == None:
-            slot_name = " "
+            slot_name = ""
 
         if (requested_slot!=None):
 
@@ -934,7 +934,7 @@ class ActionReactToSilence(Action):
 
             
             
-            if (len(exhibit_utters)!=0) and (silence_count<=3):
+            if (len(exhibit_utters)!=0) and (silence_count<=2):
 
                 dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
 
@@ -947,14 +947,14 @@ class ActionReactToSilence(Action):
                 dispatcher.utter_message(response=selected_utter)
 
                 slot_iterate_count = tracker.slots.get("slot_iterate_count")            
-                if not ((slot_iterate_count + 1>4) and (np.mod(slot_iterate_count + 1,3)==0)):
-                
+                if not ((slot_iterate_count + 1 >= 4) and (np.mod(slot_iterate_count + 1, 2)==0)):
+                    
                     dispatcher.utter_message(response="utter_say_capabilities") 
                 
 
                 return [UserUtteranceReverted(),  SlotSet("slot_silence_count",silence_count), SlotSet("slot_list_exhibit_utters",exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
             
-            elif (len(exhibit_utters)!=0) and (silence_count==4):
+            elif (len(exhibit_utters)!=0) and (silence_count==3):
                 dispatcher.utter_message(response="utter_react_to_silence_2nd", name=slot_name)
                 return [AllSlotsReset(),Restarted()]
 
@@ -1017,14 +1017,7 @@ class ActionSayCapabilites(Action):
         return []
 
 
-class ActionSayCapabilites1(Action):
-    def name(self):
-        return "action_say_capabilities_1st"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
-
-        dispatcher.utter_message(response="utter_say_capabilities_1st")        
-        return []
 
 
 class ActionExhibitSelected(Action):
@@ -1059,7 +1052,7 @@ class ActionSubmitFormExhibit(Action):
         slot_interested = tracker.slots.get("slot_interested")
         slot_name = tracker.slots.get("slot_name")
         if slot_name == None:
-            slot_name = " "
+            slot_name = ""
 
         latest_message = tracker.latest_message
         intent = latest_message["intent"].get("name") 
@@ -1103,7 +1096,7 @@ class ActionSubmitFormExhibit(Action):
             else: #an einai dio simainei rwtise prwti fora opote tha pei capabilities
 
                 dispatcher.utter_message(response="utter_introduce_exhibit")
-                dispatcher.utter_message(response="utter_say_capabilities_1st")            
+                dispatcher.utter_message(response="utter_say_capabilities")            
                 return []
 
 
@@ -1154,7 +1147,7 @@ class ActionStopTour(Action):
         
         slot_name = tracker.slots.get("slot_name")
         if slot_name == None:
-            slot_name = " "
+            slot_name = ""
 
         dispatcher.utter_message(response = "utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()] 
@@ -1252,7 +1245,7 @@ class ActionSayExhibit(Action):
             
             slot_name = tracker.slots.get("slot_name")
             if slot_name == None:
-                slot_name = " "
+                slot_name = ""
 
             dispatcher.utter_message(response="utter_exhibit_finish")
             dispatcher.utter_message(response="utter_say_goodbye", name=slot_name)

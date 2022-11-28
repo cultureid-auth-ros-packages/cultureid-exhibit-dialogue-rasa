@@ -52,10 +52,10 @@ rules:
   - action: action_react_to_silence
 
 
-- rule: ask available exhibits
-  steps:
-  - intent: intent_say_available_exhibits
-  - action: action_say_available_exhibits
+# - rule: ask available exhibits
+#   steps:
+#   - intent: intent_say_available_exhibits
+#   - action: action_say_available_exhibits
 
 - rule: affirm
   steps:
@@ -66,17 +66,17 @@ rules:
 - rule: deny
   steps:
   - intent: intent_deny
-  - action: action_repeat
+  - action: action_stop_tour
 
-- rule: all
-  steps:
-  - intent: intent_all
-  - action: action_repeat
+# - rule: all
+#   steps:
+#   - intent: intent_all
+#   - action: action_repeat
 
-- rule: whatever
-  steps:
-  - intent: intent_whatever
-  - action: action_repeat
+# - rule: whatever
+#   steps:
+#   - intent: intent_whatever
+#   - action: action_repeat
 
 
 - rule: say goodbye
@@ -122,10 +122,10 @@ rules:
   - intent: intent_subject
   - action: utter_say_favorite_subject
 
-- rule: continue
-  steps:
-  - intent: intent_no_change_exhibit
-  - action: action_no_change_exhibit
+# - rule: continue
+#   steps:
+#   - intent: intent_no_change_exhibit
+#   - action: action_no_change_exhibit
 
 - rule: repeat
   steps:
@@ -150,8 +150,8 @@ rules:
   steps:
   - intent: intent_ask_current_exhibit
   - action: action_validate_intents
-  - action: action_introduce_exhibit
-  - action: action_say_capabilities_1st
+  # - action: action_introduce_exhibit
+  - action: action_say_capabilities
 
 - rule: say name
   steps:

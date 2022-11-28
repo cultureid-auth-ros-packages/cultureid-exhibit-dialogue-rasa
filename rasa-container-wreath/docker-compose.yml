@@ -31,15 +31,7 @@ services:
     volumes:
       - ./actions:/app/actions
 
-  callback-server:
-    build:
-      context: ./
-      dockerfile: Dockerfile_callback
 
-    volumes:
-    - ".:/app/"
-
-    command: python3 callback_server.py
 
   
 
