@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
 
-  # rasa:
+  # rasa_en:
   #   build:
   #     context: ./
   #     dockerfile: Dockerfile_rasa
@@ -12,7 +12,7 @@ services:
   #   - ".:/app/"   #gia na parei ta arxeia kai to model
   #   command: train --domain domain.yml --data data --out models
 
-  rasa:
+  rasa_en:
     build:
       context: ./
       dockerfile: Dockerfile_rasa
@@ -22,7 +22,7 @@ services:
     - ".:/app/"   #gia na parei ta arxeia kai to model
     command: ["run", "--enable-api", "-p", "5006"]
 
-  action-server:
+  action-server-en:
     build:
       context: ./
       dockerfile: Dockerfile_rasa_sdk
