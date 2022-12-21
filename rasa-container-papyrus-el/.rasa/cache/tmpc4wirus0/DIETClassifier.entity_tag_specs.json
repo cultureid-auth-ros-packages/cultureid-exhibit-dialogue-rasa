@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-entity_age",
+      "2": "I-entity_age",
+      "3": "L-entity_age",
+      "4": "U-entity_age",
+      "5": "B-entity_exhibit",
+      "6": "I-entity_exhibit",
+      "7": "L-entity_exhibit",
+      "8": "U-entity_exhibit",
+      "9": "B-entity_name",
+      "10": "I-entity_name",
+      "11": "L-entity_name",
+      "12": "U-entity_name",
+      "13": "B-entity_occupation",
+      "14": "I-entity_occupation",
+      "15": "L-entity_occupation",
+      "16": "U-entity_occupation",
+      "17": "B-entity_subject",
+      "18": "I-entity_subject",
+      "19": "L-entity_subject",
+      "20": "U-entity_subject",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-entity_age": 1,
+      "I-entity_age": 2,
+      "L-entity_age": 3,
+      "U-entity_age": 4,
+      "B-entity_exhibit": 5,
+      "I-entity_exhibit": 6,
+      "L-entity_exhibit": 7,
+      "U-entity_exhibit": 8,
+      "B-entity_name": 9,
+      "I-entity_name": 10,
+      "L-entity_name": 11,
+      "U-entity_name": 12,
+      "B-entity_occupation": 13,
+      "I-entity_occupation": 14,
+      "L-entity_occupation": 15,
+      "U-entity_occupation": 16,
+      "B-entity_subject": 17,
+      "I-entity_subject": 18,
+      "L-entity_subject": 19,
+      "U-entity_subject": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
