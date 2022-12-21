@@ -284,6 +284,9 @@ class SayBye(Action):
         domain: Dict) -> List[EventType]:
 
         slot_name = tracker.slots.get("slot_name")
+                
+        if slot_name == None:
+            slot_name = ""
 
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()]
@@ -522,9 +525,11 @@ class ActionSetSlotName(Action):
                 if intent in rule_intents:
                     return []
 
-                #wreath_intents = tracker.slots.get("slot_wreath_intents")
-                #if intent in wreath_intents:
-                #    return []
+                wreath_intents = tracker.slots.get("slot_wreath_intents")
+                if intent in wreath_intents:
+                   return []
+                if (intent=="intent_exhibit") or (intent=="intent_ask_current_exhibit"):
+                    return []
 
                 
                 # text = latest_message["text"]
@@ -570,9 +575,11 @@ class ActionSetSlotAge(Action):
                 if intent in rule_intents:
                     return []
 
-                #wreath_intents = tracker.slots.get("slot_wreath_intents")
-                #if intent in wreath_intents:
-                #    return []
+                wreath_intents = tracker.slots.get("slot_wreath_intents")
+                if intent in wreath_intents:
+                   return []
+                if (intent=="intent_exhibit") or (intent=="intent_ask_current_exhibit"):
+                    return []
 
 
                 if intent == "intent_age":
@@ -1255,7 +1262,10 @@ class ActionValidateAction(Action):
         
         if  (slot_interested==None): 
                         
-            return [SlotSet("slot_interested", True), FollowupAction("form_exhibit")]               
+            bot_response = "Στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το Χρυσό Στεφάνι Μυρτιάς στους επισκέπτες μας."
+            dispatcher.utter_message(text=bot_response)
+            return [FollowupAction("form_exhibit")]
+
         else:
 
             return []

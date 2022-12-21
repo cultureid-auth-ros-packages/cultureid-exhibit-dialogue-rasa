@@ -32,19 +32,19 @@ intents:
   - intent_how_are_you
   - intent_what_is_your_name
   - intent_what_is_your_age
-
+  
 
 
 responses:
 
   utter_introduce_exhibit:
   - text: The famous bronze krater is one of the most important finds of the Derveni cemetery. This unique masterpiece is preserved entirely and is exhibited at the Archaeological Museum of Thessaloniki.
-
+  
   utter_say_making:
   - text: The vessel is made of two hammered bronze plates, one for the body and one for the upper part of the neck. Conversely, the vessel's spiral handles and base, as well as the statuettes on its shoulder are cast, bearing added hammered decorative elements.
 
   utter_say_belonging:
-  - text: An inscription on the rim of the vase is inscribed in silver letters. It is written in the Thessalian dialect and states "I am the krater of Astion the son of Anaxagoras from Larissa". Whether this Astion was the occupant of the tomb or a previous owner of the krater is a question that remains unanswered.
+  - text: An inscription on the rim of the vase is inscribed in silver letters. It is written in the Thessalian dialect and states "I am the krater of Astion the son of Anaxagoras from Larissa". Whether this Astion was the occupant of the tomb or a previous owner of the krater is a question that remains unanswered. 
 
   utter_say_creation:
   - text: The krater dates back to 330-320 BC. and was probably manufactured in a Macedonian workshop. It seems that the artist, who probably came from an Ionian city in Chalcidice, had been well acquainted with Attic art styles and was probably apprenticed in Athens.
@@ -66,20 +66,20 @@ responses:
 
   -utter_say_finding:
   - text: The krater was found in 1962 during the excavation of the cist grave B' in Derveni, Thessaloniki. It is the richest tomb out of the seven found in total in Derveni. It contained gold jewellery, vessels made of silver, bronze, glass, alabaster and clay, weapons, and metal wreaths
-
-
-  utter_say_capabilities:
+  
+  
+  utter_say_capabilities: 
   - text: Make me a question and I'll answer. For instance, you could ask me what the krater is made of or why it is such an important discovery.
-  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it was linked to cremation or how it was manufactured.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was linked to cremation or how it was manufactured.
   - text: Challenge me. Ask me something. For instance, you could ask me what it was used for or whom it belonged to.
-  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it was manufactured or what it depicts.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was manufactured or what it depicts.  
   - text: Make me a question and I'll answer. For instance, you could ask me when the krater dates or what it is made of.
   - text: Challenge me. Ask me something. For instance, you could ask me how the krater was found or who manufactured it.
   - text: Make me a question and I'll answer. For instance, you could ask me what the vessel depicts or why it is such an important find.
-  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it is linked to cremation or whent it dates.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it is linked to cremation or whent it dates.
   - text: Challenge me. Ask me something. For instance, you could ask me whom it belonged to or by whom it was manufactured.
-
-
+  
+  
 
 
 
@@ -91,7 +91,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Nice to meet you.
+    text: Nice to meet you. 
 
   - condition:
     - type: slot
@@ -110,7 +110,7 @@ responses:
   - text: Finally we're meeting each other {name}.
   - text: So happy to meet you {name}.
 
-
+  
   utter_guess_class:
   - text: Let me guess. Since you are {age} years old, you should {grade}.
 
@@ -122,8 +122,8 @@ responses:
 
 
   utter_ask_form_user_slot_name:
-
-  - text: "What's your name?"
+  
+  - text: "What's your name?"   
   - text: "Who are you?"
   - text: How about your name?
   - text: Tell me your name.
@@ -131,8 +131,8 @@ responses:
 
   utter_ask_form_user_slot_age:
 
-  - text: How old are you?
-  - text: "What is your age?"
+  - text: How old are you? 
+  - text: "What is your age?" 
 
 
   utter_ask_form_user_slot_occupation:
@@ -159,7 +159,7 @@ responses:
 
 
   utter_ask_form_user_slot_favorite_subject:
-
+  
   - text: What's your favourite subject?
   - text: Which subject do you like the most?
 
@@ -203,25 +203,25 @@ responses:
       value: "1"
     text: Shall we go on?
 
-
+  
   - text: Would it interest you to listen about the krater?
   - text: Would you like to learn more about the krater?
   - text: Are you interested in listening to some facts about the krater?
   - text: Shall we continue with information about the krater?
 
-
+  
 
   utter_say_thanks:
-  - text: Thanks a lot.
+  - text: Thanks a lot. 
   utter_say_thanks_deny:
   - text: Okay. Have a nice day.
 
   utter_introduce:
   - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
 
+ 
 
-
-
+  
   utter_say_following:
   - text: Instead, I can tell you this.
   - text: Alternatively, I could tell you this.
@@ -235,7 +235,7 @@ responses:
       name: slot_name
       value: ""
     text: That's great. Let's continue. Should you want to stop, just let me know.
-
+  
   - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
@@ -249,14 +249,14 @@ responses:
 
 
   utter_fallback_1st_time:
-  - text: I am sorry. I don't know this.
+  - text: I am sorry. I don't know this. 
   - text: I am so sorry. I don't possess such information.
   - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: I am deeply sorry. I don't know this either.
+  - text: I am deeply sorry. I don't know this either. 
   - text: I don't possess such information, too.
   - text: Many apologies. Neither do I know this.
 
@@ -283,6 +283,12 @@ responses:
     - type: slot
       name: slot_name
       value: ""
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: None
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
@@ -331,7 +337,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Was it too hard for you? Let me repeat once again.
+    text: Was it too hard for you? Let me repeat once again. 
 
   - condition:
     - type: slot
@@ -352,7 +358,7 @@ responses:
 
 
   - text: Hey, are you still there?
-  - text: Are you still there?
+  - text: Are you still there? 
   - text: You are quite shy. Let me help you.
   - text: Oh! A shy visitor!
   - text: Do you need help? Let me repeat.
@@ -394,14 +400,14 @@ responses:
 
 
   utter_exhibit_finish:
-  - text: I think we have already covered every detail regarding the exhibit.
+  - text: I think we have already covered every detail regarding the exhibit. 
   - text: I have already told you everything I know about the Krater of Derveni.
-
+  
   utter_exhibit_enough:
   - text: You might have got tired with all these details.
   - text: We have already covered a wealth of information.
 
-
+  
   utter_say_current_exhibit:
   - text: We are talking about the Krater of Derveni.
 
@@ -413,7 +419,7 @@ responses:
   - text: At this point, our tour has finished.
   - text: That's the end of our tour.
 
-
+  
   utter_say_name:
   - text: I am Indy. I am the robot of the museum.
 
@@ -516,14 +522,14 @@ slots:
     mappings:
     - type: custom
       action: action_set_slot_age
-
+  
   slot_occupation:
     type: any
     mappings:
     - type: custom
       action: action_set_slot_occupation
 
-  slot_favorite_subject:
+  slot_favorite_subject: 
     type: any
     mappings:
     - type: custom
@@ -551,7 +557,7 @@ slots:
     - type: custom
       action: action_set_slot_fallback_count
 
-
+ 
 
   slot_silence_count:
     type: float
@@ -595,7 +601,7 @@ slots:
     - type: custom
       action: action_set_slot_kratiras_intents
 
-  slot_iterate_count:
+  slot_iterate_count: 
     type: any
     initial_value: 0
     influence_conversation: false
@@ -604,13 +610,13 @@ slots:
       action: action_set_slot_iterate_count
 
 
-  slot_capabilities:
+  slot_capabilities: 
     type: any
     initial_value: [["Make a question and I'll answer. For instance, you could ask me what material the krater is made of or why it is such an important discovery.",  "Make a question and I'll answer. For instance, you could ask me how the krater was linked to burial rituals or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask me what it was used for or whom it belonged to.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the krater was manufactured or what it depicts.",   "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me when the krater dates back or what material it is made of.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the krater was found or who manufactured it.",  "Challenge me. Ask me something. For instance, you could ask me what the vessel depicts or why it is such an important find.",  "Challenge me. Ask me something. For instance, you could ask me how it is linked to burial rituals or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me whom it belonged to or by whom it was manufactured."], [["utter_say_material", "utter_say_importance"], ["utter_say_burial","utter_say_making"], ["utter_say_use", "utter_say_belonging"], ["utter_say_making", "utter_say_depiction"], ["utter_say_finding", "utter_say_material"], ["utter_say_finding", "utter_say_creation"], ["utter_say_depiction", "utter_say_importance"], ["utter_say_burial", "utter_say_use"], ["utter_say_belonging", "utter_say_creation"]]]
     influence_conversation: false
     mappings:
     - type: custom
-      action: action_set_slot_capabilities
+      action: action_set_slot_capabilities 
 
 
 
@@ -622,10 +628,10 @@ forms:
       - slot_occupation
       - slot_favorite_subject
 
-
+      
 
   form_exhibit:
     required_slots:
       - slot_interested
 
-
+  

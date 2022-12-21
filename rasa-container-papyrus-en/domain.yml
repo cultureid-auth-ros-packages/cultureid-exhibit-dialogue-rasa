@@ -32,7 +32,7 @@ intents:
   - intent_how_are_you
   - intent_what_is_your_name
   - intent_what_is_your_age
-
+  
 
 
 responses:
@@ -42,7 +42,7 @@ responses:
 
   utter_say_content:
   - text: The papyrus contains the text of a book, of which neither the beginning nor the end survives. First, the author, a prophet or soothsayer, addresses candidates for initiation and describes devotional practices relating to the fate of the soul after death, while an Orphic hymn is developed afterward. This hymn accompanied the initiation rites for those to whom the book is addressed.
-
+  
   utter_say_language:
   - text: The text is written in dark ink in capital letters and in the Attic dialect, with certain Ionian elements.
 
@@ -51,7 +51,7 @@ responses:
 
   utter_say_exposition:
   - text: This unique find was exhibited for the first time at the Archaeological Museum of Thessaloniki in 1962. Since 2013, the papyrus has been hosted in the permanent exhibition The Gold of Macedon, placed in a horizontal showcase with special humidity and temperature conditions for its proper preservation.
-
+  
   utter_say_size:
   - text: The part of the papyrus that is preserved and exhibited in the Museum is 9.4 centimeters high and constitutes the upper part of a cylinder that had a total length of about 3 meters.
 
@@ -65,11 +65,11 @@ responses:
   - text: Many hypotheses have been proposed about the author of the book, whose identity remains unknown. One of them identifies the author with a prophet and theologian, Euthyphron from Prospalta of Attica.
 
   utter_say_making:
-  - text: Papyrus comes from the processing of the Cyperus Papyrus plant that grows in the marshes of the Nile Delta. For its manufacture, the plant was cut into thin strips. These were placed on a hard and wet surface laid side by side, and on top of them, the second set of strips followed placed at right angles atop the first set. A wide-surfaced hammer was used to bond the two layers and then the sheet was dried in the sun.
+  - text: Papyrus comes from the processing of the Cyperus Papyrus plant that grows in the marshes of the Nile Delta. For its manufacture, the plant was cut into thin strips. These were placed on a hard and wet surface laid side by side, and on top of them, the second set of strips followed placed at right angles atop the first set. A wide-surfaced hammer was used to bond the two layers and then the sheet was dried in the sun. 
 
 
 
-  utter_say_capabilities:
+  utter_say_capabilities: 
   - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πότε ανακαλύφθηκε ο πάπυρος ή ποιος είναι ο συγγραφέας του.
   - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πως κατασκευάστηκε ο πάπυρος ή από ποιόν ανακαλύφθηκε.
   - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις για τις διαστάσεις του παπύρου ή ποιά είναι η αξία του.
@@ -84,7 +84,7 @@ responses:
   # - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Μπορώ να σου δώσω πληροφορίες σχετικά με το πότε ανακαλύφθηκε, πως κατασκευαζόταν, ποιά είναι η γλώσσα γραφής του, πότε δημιουργήθηκε, ποιος είναι ο συγγραφέας, ποιό είναι το περιεχόμενο του, ποιές είναι οι διαστάσεις του, γιατί είναι τόσο σημαντικό και που εκτίθεται.
   # - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Μπορώ να απαντήσω σχετικά με το πότε ανακαλύφθηκε, πως κατασκευαζόταν, ποιά είναι η γλώσσα γραφής του, ποιος είναι ο συγγραφέας, πότε δημιουργήθηκε, ποιό είναι το περιεχόμενο του, ποιές είναι οι διαστάσεις του, γιατί είναι τόσο σημαντικό και που εκτίθεται.
 
-
+  
 
 
 
@@ -99,7 +99,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Nice to meet you.
+    text: Nice to meet you. 
 
   - condition:
     - type: slot
@@ -118,7 +118,7 @@ responses:
   - text: Finally we're meeting each other {name}.
   - text: So happy to meet you {name}.
 
-
+  
   utter_guess_class:
   - text: Let me guess. Since you are {age} years old, you should {grade}.
 
@@ -130,8 +130,8 @@ responses:
 
 
   utter_ask_form_user_slot_name:
-
-  - text: "What's your name?"
+  
+  - text: "What's your name?"   
   - text: "Who are you?"
   - text: How about your name?
   - text: Tell me your name.
@@ -139,8 +139,8 @@ responses:
 
   utter_ask_form_user_slot_age:
 
-  - text: How old are you?
-  - text: "What is your age?"
+  - text: How old are you? 
+  - text: "What is your age?" 
 
 
   utter_ask_form_user_slot_occupation:
@@ -167,7 +167,7 @@ responses:
 
 
   utter_ask_form_user_slot_favorite_subject:
-
+  
   - text: What's your favourite subject?
   - text: Which subject do you like the most?
 
@@ -211,25 +211,25 @@ responses:
       value: "1"
     text: Shall we go on?
 
-
+  
   - text: Would it interest you to listen about the papyrus?
   - text: Would you like to learn more about the papyrus?
   - text: Are you interested in listening to some facts about the papyrus?
   - text: Shall we continue with information about the papyrus?
 
-
+  
 
   utter_say_thanks:
-  - text: Thanks a lot.
+  - text: Thanks a lot. 
   utter_say_thanks_deny:
   - text: Okay. Have a nice day.
 
   utter_introduce:
   - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
 
+ 
 
-
-
+  
   utter_say_following:
   - text: Instead, I can tell you this.
   - text: Alternatively, I could tell you this.
@@ -243,7 +243,7 @@ responses:
       name: slot_name
       value: ""
     text: That's great. Let's continue. Should you want to stop, just let me know.
-
+  
   - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
@@ -257,14 +257,14 @@ responses:
 
 
   utter_fallback_1st_time:
-  - text: I am sorry. I don't know this.
+  - text: I am sorry. I don't know this. 
   - text: I am so sorry. I don't possess such information.
   - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: I am deeply sorry. I don't know this either.
+  - text: I am deeply sorry. I don't know this either. 
   - text: I don't possess such information, too.
   - text: Many apologies. Neither do I know this.
 
@@ -291,6 +291,12 @@ responses:
     - type: slot
       name: slot_name
       value: ""
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: None
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
@@ -339,7 +345,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Was it too hard for you? Let me repeat once again.
+    text: Was it too hard for you? Let me repeat once again. 
 
   - condition:
     - type: slot
@@ -360,7 +366,7 @@ responses:
 
 
   - text: Hey, are you still there?
-  - text: Are you still there?
+  - text: Are you still there? 
   - text: You are quite shy. Let me help you.
   - text: Oh! A shy visitor!
   - text: Do you need help? Let me repeat.
@@ -402,14 +408,14 @@ responses:
 
 
   utter_exhibit_finish:
-  - text: I think we have already covered every detail regarding the exhibit.
+  - text: I think we have already covered every detail regarding the exhibit. 
   - text: I have already told you everything I know about the Papyrus of Derveni.
-
+  
   utter_exhibit_enough:
   - text: You might have got tired with all these details.
   - text: We have already covered a wealth of information.
 
-
+  
   utter_say_current_exhibit:
   - text: We are talking about the Papyrus of Derveni.
 
@@ -421,7 +427,7 @@ responses:
   - text: At this point, our tour has finished.
   - text: That's the end of our tour.
 
-
+  
   utter_say_name:
   - text: I am Indy. I am the robot of the museum.
 
@@ -525,14 +531,14 @@ slots:
     mappings:
     - type: custom
       action: action_set_slot_age
-
+  
   slot_occupation:
     type: any
     mappings:
     - type: custom
       action: action_set_slot_occupation
 
-  slot_favorite_subject:
+  slot_favorite_subject: 
     type: any
     mappings:
     - type: custom
@@ -560,7 +566,7 @@ slots:
     - type: custom
       action: action_set_slot_fallback_count
 
-
+ 
 
   slot_silence_count:
     type: float
@@ -604,7 +610,7 @@ slots:
     - type: custom
       action: action_set_slot_papyrus_intents
 
-  slot_iterate_count:
+  slot_iterate_count: 
     type: any
     initial_value: 0
     influence_conversation: false
@@ -612,7 +618,7 @@ slots:
     - type: custom
       action: action_set_slot_iterate_count
 
-  slot_capabilities:
+  slot_capabilities: 
     type: any
     initial_value: [["Make a question and I'll answer. For instance, you could ask me where the papyrus is exhibited or who its author is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me how the papyrus was manufactured or where it was found.",  "Challenge me. Ask me something. For instance, you could ask about the dimensions of the papyrus or why it is such an important find.",  "Make a question and I'll answer. For instance, you could ask me when the papyrus was found or what its content is about.",   "Ask a question and I will respond as long as I know the answer. For instance, you could ask me by whom the papyrus was found or what language is used.",  "Challenge me. Ask me something. For instance, you could ask why the papyrus is such an important find or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask where it is exhibited or what its size is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me when it was found or by whom it was written.",  "Challenge me. Ask me something. For instance, you could ask what the content of the papyrus is about or in which language it was written."], [["utter_say_exhibition", "utter_say_writer"], ["utter_say_making","utter_say_finding"], ["utter_say_size", "utter_say_importance"], ["utter_say_finding", "utter_say_importance"], ["utter_say_finding", "utter_say_language"], ["utter_say_importance", "utter_say_making"], ["utter_say_exhibition", "utter_say_size"], ["utter_say_finding", "utter_say_writer"], ["utter_say_content", "utter_say_language"]]]
     influence_conversation: false
@@ -628,10 +634,10 @@ forms:
       - slot_occupation
       - slot_favorite_subject
 
-
+      
 
   form_exhibit:
     required_slots:
       - slot_interested
 
-
+  
