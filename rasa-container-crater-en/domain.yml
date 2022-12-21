@@ -70,13 +70,13 @@ responses:
 
   utter_say_capabilities:
   - text: Make me a question and I'll answer. For instance, you could ask me what the krater is made of or why it is such an important discovery.
-  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was linked to cremation or how it was manufactured.
+  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it was linked to cremation or how it was manufactured.
   - text: Challenge me. Ask me something. For instance, you could ask me what it was used for or whom it belonged to.
-  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was manufactured or what it depicts.
+  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it was manufactured or what it depicts.
   - text: Make me a question and I'll answer. For instance, you could ask me when the krater dates or what it is made of.
   - text: Challenge me. Ask me something. For instance, you could ask me how the krater was found or who manufactured it.
   - text: Make me a question and I'll answer. For instance, you could ask me what the vessel depicts or why it is such an important find.
-  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it is linked to cremation or whent it dates.
+  - text: Ask a question and I will respond as long as I know the answer. For instance, you could ask me how it is linked to cremation or whent it dates.
   - text: Challenge me. Ask me something. For instance, you could ask me whom it belonged to or by whom it was manufactured.
 
 
