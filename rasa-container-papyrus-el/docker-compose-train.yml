@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+
+   rasa_el:
+     build:
+       context: ./
+       dockerfile: Dockerfile_rasa
+     ports:
+     - "5005:5005"
+     volumes:
+     - ".:/app/"   #gia na parei ta arxeia kai to model
+     command: train --domain domain.yml --data data --out models

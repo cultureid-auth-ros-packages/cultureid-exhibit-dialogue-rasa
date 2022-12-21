@@ -32,7 +32,7 @@ intents:
   - intent_how_are_you
   - intent_what_is_your_name
   - intent_what_is_your_age
-  
+
 
 
 responses:
@@ -45,7 +45,7 @@ responses:
 
   utter_say_dating:
   - text: The wreath dates back to the end of the 4th century BC. Golden wreaths were especially widespread during 350-300 BC., when the economy of the Macedonian kingdom flourishes as a consequence of the conquests of Alexander the Great in the East. Initially, wreaths were lavishly and elaborately decorated, but from the beginning of the 3rd c. BC. the tendency for simpler constructions is documented.
-  
+
   utter_say_creation:
   - text: The wreath consists of two tubular stems that were tightly tied with gold wire at the back of the head, while at the front they were joined with a double gold wire in the form of the so-called "Herculean knot", which refers to the knot  formed by lionskin of the hero. On the hoop are secured 26 stems with myrtle leaves and a total of 135 extremely natural-looking flowers of seven types.
 
@@ -63,7 +63,7 @@ responses:
 
 
 
-  
+
 
 
 
@@ -73,7 +73,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Nice to meet you. 
+    text: Nice to meet you.
 
   - condition:
     - type: slot
@@ -92,7 +92,7 @@ responses:
   - text: Finally we're meeting each other {name}.
   - text: So happy to meet you {name}.
 
-  
+
   utter_guess_class:
   - text: Let me guess. Since you are {age} years old, you should {grade}.
 
@@ -104,8 +104,8 @@ responses:
 
 
   utter_ask_form_user_slot_name:
-  
-  - text: "What's your name?"   
+
+  - text: "What's your name?"
   - text: "Who are you?"
   - text: How about your name?
   - text: Tell me your name.
@@ -113,8 +113,8 @@ responses:
 
   utter_ask_form_user_slot_age:
 
-  - text: How old are you? 
-  - text: "What is your age?" 
+  - text: How old are you?
+  - text: "What is your age?"
 
 
   utter_ask_form_user_slot_occupation:
@@ -141,7 +141,7 @@ responses:
 
 
   utter_ask_form_user_slot_favorite_subject:
-  
+
   - text: What's your favourite subject?
   - text: Which subject do you like the most?
 
@@ -185,25 +185,25 @@ responses:
       value: "1"
     text: Shall we go on?
 
-  
+
   - text: Would it interest you to listen about the wreath?
   - text: Would you like to learn more about the wreath?
   - text: Are you interested in listening to some facts about the wreath?
   - text: Shall we continue with information about the wreath?
 
-  
+
 
   utter_say_thanks:
-  - text: Thanks a lot. 
+  - text: Thanks a lot.
   utter_say_thanks_deny:
   - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
+  - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
 
- 
 
-  
+
+
   utter_say_following:
   - text: Instead, I can tell you this.
   - text: Alternatively, I could tell you this.
@@ -217,7 +217,7 @@ responses:
       name: slot_name
       value: ""
     text: That's great. Let's continue. Should you want to stop, just let me know.
-  
+
   - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
@@ -231,14 +231,14 @@ responses:
 
 
   utter_fallback_1st_time:
-  - text: I am sorry. I don't know this. 
+  - text: I am sorry. I don't know this.
   - text: I am so sorry. I don't possess such information.
   - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: I am deeply sorry. I don't know this either. 
+  - text: I am deeply sorry. I don't know this either.
   - text: I don't possess such information, too.
   - text: Many apologies. Neither do I know this.
 
@@ -313,7 +313,7 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Was it too hard for you? Let me repeat once again. 
+    text: Was it too hard for you? Let me repeat once again.
 
   - condition:
     - type: slot
@@ -334,7 +334,7 @@ responses:
 
 
   - text: Hey, are you still there?
-  - text: Are you still there? 
+  - text: Are you still there?
   - text: You are quite shy. Let me help you.
   - text: Oh! A shy visitor!
   - text: Do you need help? Let me repeat.
@@ -376,14 +376,14 @@ responses:
 
 
   utter_exhibit_finish:
-  - text: I think we have already covered every detail regarding the exhibit. 
+  - text: I think we have already covered every detail regarding the exhibit.
   - text: I have already told you everything I know about the golden myrtle wreath.
-  
+
   utter_exhibit_enough:
   - text: You might have got tired with all these details.
   - text: We have already covered a wealth of information.
 
-  
+
   utter_say_current_exhibit:
   - text: We are talking about the golden myrtle wreath.
 
@@ -395,7 +395,7 @@ responses:
   - text: At this point, our tour has finished.
   - text: That's the end of our tour.
 
-  
+
   utter_say_name:
   - text: I am Indy. I am the robot of the museum.
 
@@ -496,14 +496,14 @@ slots:
     mappings:
     - type: custom
       action: action_set_slot_age
-  
+
   slot_occupation:
     type: any
     mappings:
     - type: custom
       action: action_set_slot_occupation
 
-  slot_favorite_subject: 
+  slot_favorite_subject:
     type: any
     mappings:
     - type: custom
@@ -574,7 +574,7 @@ slots:
     - type: custom
       action: action_set_slot_wreath_intents
 
-  slot_iterate_count: 
+  slot_iterate_count:
     type: any
     initial_value: 0
     influence_conversation: false
@@ -582,7 +582,7 @@ slots:
     - type: custom
       action: action_set_slot_iterate_count
 
-  slot_capabilities: 
+  slot_capabilities:
     type: any
     initial_value: [["Make a question and I'll answer. For instance, you could ask me how the museum acquired the wreath or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask me how the wreath is related to burial rituals.",  "Make a question and I'll answer. For instance, you could ask me when it dates back or what material it is made of.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me what material the wreath is made of or why it is an important find.",   "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me why golden wreaths were used in ancient times or how they were linked to burial rituals.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the wreath was acquired by the museum or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me how it was manufactured or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me what material it is made of or for what reason golden wreaths were used in ancient times.",  "Challenge me. Ask me something. For instance, you could ask me why it is such an important discovery or how it was acquired by the museum."], [["utter_say_acquisition", "utter_say_creation"], ["utter_say_burial"], ["utter_say_dating", "utter_say_material"], ["utter_say_material", "utter_say_importance"], ["utter_say_use", "utter_say_burial"], ["utter_say_acquisition", "utter_say_dating"], ["utter_say_creation", "utter_say_dating"], ["utter_say_material", "utter_say_use"], ["utter_say_importance", "utter_say_acquisition"]]]
     influence_conversation: false
