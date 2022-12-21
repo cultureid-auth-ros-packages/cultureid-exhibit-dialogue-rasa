@@ -1,6 +1,8 @@
 version: "3.1"
 
+
 intents:
+
   - intent_burial
   - intent_importance
   - intent_dating
@@ -36,47 +38,30 @@ intents:
 responses:
 
   utter_introduce_exhibit:
-  - text: Το Αρχαιολογικό Μουσείο Θεσσαλονίκης φιλοξενεί τη μεγαλύτερη στον κόσμο συλλογή χρυσών στεφανιών της κλασικής και ελληνιστικής περιόδου. Το χρυσό στεφάνι ανθισμένης μυρτιάς που εκτίθεται αποτελεί ένα από τα πιο πλούσια στολισμένα στεφάνια που έχει σωθεί από την αρχαιότητα.
+  - text: The Archaeological Museum of Thessaloniki houses the world's largest collection of gold wreaths from the classical and Hellenistic periods. The gold blossomed myrtle wreath on display is one of the most richly decorated wreaths to have survived from antiquity.
 
   utter_say_acquisition:
-  - text: Το χρυσό στεφάνι είναι προϊόν λαθρανασκαφής και πιθανώς προέρχεται από τάφο στην Κεντρική Μακεδονία. Διακινήθηκε παράνομα στο εξωτερικό και το 1993 αγοράστηκε από το μουσείο Jean Paul Getty των Ηνωμένων Πολιτειών Αμερικής. Το 2007 επαναπατρίστηκε στην Ελλάδα, μετά από διαπραγματεύσεις. 
-  
+  - text: The golden wreath is the product of an illicit excavation and probably came from a tomb in Central Macedonia. It was traded illegally abroad and in 1993 was purchased by the Jean Paul Getty Museum of the USA. In 2007 after negotiations it was returned to Greece.
+
   utter_say_dating:
-  - text: Το στεφάνι χρονολογείται στο τέλος του 4ου αιώνα προ Χριστού. Η μεγαλύτερη διάδοσή των χρυσών στεφανιών υπήρξε την περίοδο των κατακτήσεων του Μεγάλου Αλεξάνδρου λόγω της αφθονίας σε πολύτιμα μέταλλα. Αρχικά, τα στεφάνια ήταν πολύ πλούσια και επιμελώς διακοσμημένα, αλλά από τις αρχές του τρίτου αιώνα προ Χριστού παρατηρείται η τάση για πιο απλές κατασκευές.
+  - text: The wreath dates back to the end of the 4th century BC. Golden wreaths were especially widespread during 350-300 BC., when the economy of the Macedonian kingdom flourishes as a consequence of the conquests of Alexander the Great in the East. Initially, wreaths were lavishly and elaborately decorated, but from the beginning of the 3rd c. BC. the tendency for simpler constructions is documented.
   
   utter_say_creation:
-  - text: Το στεφάνι αποτελείται από δύο σωληνωτά στελέχη που στο πίσω μέρος της κεφαλής δέθηκαν σφικτά με χρυσό σύρμα, ενώ στο εμπρός μέρος συνδέθηκαν με διπλό χρυσό σύρμα στη μορφή του λεγόμενου «ηράκλειου κόμβου»,  σαν τον κόμπο δηλαδή  που σχημάτιζε η λεοντή του Ηρακλή.  Στη στεφάνη σώζονται στερεωμένα 26 κλαδιά με φύλλα μυρτιάς και 135 άνθη επτά τύπων.  
- 
+  - text: The wreath consists of two tubular stems that were tightly tied with gold wire at the back of the head, while at the front they were joined with a double gold wire in the form of the so-called "Herculean knot", which refers to the knot  formed by lionskin of the hero. On the hoop are secured 26 stems with myrtle leaves and a total of 135 extremely natural-looking flowers of seven types.
+
   utter_say_material:
-  - text: Το στεφάνι είναι κατασκευασμένο από χρυσό. Η εντυπωσιακή πολυχρωμία του επιτυγχάνεται με τη χρήση κυανού ή πράσινου σμάλτου σε μερικά πέταλα, ενώ οι χρυσοί στήμονες απολήγουν σε χρυσά ή γυάλινα σφαιρίδια, κυανού ή λευκού χρώματος.  Εκτός από τα χρυσά στεφάνια, υπήρχαν και ασημένια, αλλά και επιχρυσωμένα από μπρούντζο, ξύλο και πηλό.
+  - text: The wreath is entirely made of gold. Its unique aesthetic effect is achieved by the use of blue or green enamel on some petals, while the gold stamens are tipped with tiny gold or glass beads, tinted white or blue. In addition to gold wreaths, there were those made of silver, as well as gilded ones made of bronze, wood, and clay.
 
   utter_say_importance:
-  - text: Το χρυσό στεφάνι μυρτιάς υπήρξε προϊόν λαθρανασκαφής και αρχαιοκαπηλίας. Είναι ιδιαίτερα σημαντικό το γεγονός ότι μετά από δεκαετίες εντοπίστηκε, διεκδικήθηκε και με τις απαραίτητες νόμιμες διαδικασίες επέστρεψε στη χώρα μας. 
+  - text: The golden myrtle wreath was the product of illicit excavation and trade. It is particularly important that after decades it was identified, claimed, and returned to our country with the necessary legal procedures.
 
   utter_say_use:
-  - text: Τα χρυσά στεφάνια ανήκαν σε πλούσιες και αριστοκρατικές οικογένειες, δηλώνοντας έτσι την υψηλή κοινωνική ή οικονομική τους θέση. Τα φορούσαν σε γάμους, συμπόσια και άλλου είδους κοινωνικές εκδηλώσεις. Αφιερώνονταν, επίσης, από τους πιστούς σε ιερά,  προσφέρονταν ως έπαθλα αγώνων, ενώ είχαν και θρησκευτικό χαρακτήρα. 
+  - text: Gold wreaths belonged to rich and aristocratic families, which indicated their high social or economic status. They were worn at weddings, banquets, and other types of social events. They were also dedicated by the believers to sanctuaries, they were offered as competition prizes, while they also had a religious character.
 
   utter_say_burial:
-  - text: Τα περισσότερα χρυσά στεφάνια προέρχονται από πλούσιους τάφους, υποδηλώνοντας την ισχυρή κοινωνική θέση που κατείχαν εν ζωή. Τα στεφάνια συνόδευαν το νεκρό ως έπαθλο για τον αγώνα της ζωής, με τον τρόπο που στεφανώνονταν οι αθλητές των αγώνων. Ταυτόχρονα, προστάτευαν το νεκρό ή τη νεκρή στο ταξίδι τους στον άλλο κόσμο.
+  - text: The largest number of gold wreaths come from rich tombs, indicating the powerful social status of the deceased while alive. Wreaths accompanied the dead as a prize earned over their lifetime, like the crown awarded to an athlete who has been victorious in a contest. At the same time, they had an apotropaic use by protecting the deceased on their journey to the other world.
 
 
-
-  utter_say_capabilities: 
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πώς αποκτήθηκε από το μουσείο ή πώς κατασκευάστηκε.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πώς συνδέεται το στεφάνι με ταφικές τελετουργίες.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις πότε χρονολογείται ή από τί υλικό είναι κατασκευασμένο.
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις από τι υλικό είναι κατασκευασμένο το στεφάνι ή γιατί είναι τόσο σημαντικό.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα ή πώς συνδέονται με ταφικές τελετουργίες.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις για το πώς αποκτήθηκε το στεφάνι από το μουσείο ή πότε χρονολογείται.
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις με ποιόν τρόπο κατασκευάστηκε ή πότε χρονολογείται.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις από τί υλικό είναι κατασκευασμένο ή για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις γιατί είναι σημαντικό εύρημα ή πώς αποκτήθηκε από το μουσείο.
-  
-  
-  
-  # utter_say_capabilities_1st:
-  # - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Μπορώ να σου δώσω πληροφορίες σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πως αποκτήθηκε από το μουσείο, για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα, γιατί είναι τόσο σημαντικό και πώς συνδέονται τα στεφάνια με τις ταφικές τελετουργίες.
-  # - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Μπορώ να απαντήσω σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πως αποκτήθηκε, για ποιό λόγο φορούσαν στεφάνια στην αρχαιότητα, γιατί είναι τόσο σημαντικό και πώς συνδέονται τα στεφάνια με τις ταφικές τελετουργίες.
 
   
 
@@ -88,41 +73,48 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Χαίρω πολύ. 
+    text: Nice to meet you. 
 
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Επιτέλους σε γνωρίζω.
+    text: Finally we're meeting each other.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: So happy to meet you.
 
 
-  - text: Χαίρω πολύ {name}.
-  - text: Επιτέλους σε γνωρίζω {name}.
+  - text: Nice to meet you {name}.
+  - text: Finally we're meeting each other {name}.
+  - text: So happy to meet you {name}.
 
   
   utter_guess_class:
-  - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
+  - text: Let me guess. Since you are {age} years old, you should {grade}.
 
   utter_wrong_age:
-  - text: Τί λες βρε ψεύτη. Σιγά μην είσαι και {name}. Τέλος πάντων ας σε πιστέψω.
+  - text: Ha ha ha. Very funny. Anyway.
 
   utter_say_my_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: I am one robotic-year old. This corresponds to eight human years. If I were a human, I would be in the third grade of primary school.
 
 
   utter_ask_form_user_slot_name:
   
-  - text: "Εσένα πώς σε λένε;"   
-  - text: "Εσύ ποιός είσαι;"
-  - text: "Ποιό είναι το όνομά σου;"
+  - text: "What's your name?"   
+  - text: "Who are you?"
+  - text: How about your name?
+  - text: Tell me your name.
 
 
   utter_ask_form_user_slot_age:
 
-  - text: Πόσων ετών είσαι; 
-  - text: "Ποιά είναι η ηλικία σου;" 
-  - text: "Πόσων χρόνων είσαι;"
+  - text: How old are you? 
+  - text: "What is your age?" 
 
 
   utter_ask_form_user_slot_occupation:
@@ -131,33 +123,27 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Σε ποιά τάξη είσαι;
+    text: Which grade are you in?
 
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False  
-    text: Τί τάξη πας;
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Με τί ασχολείσαι;
+    text: What do you do for a living?
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Τί δουλειά κάνεις;
+    text: What is your profession?
 
 
 
   utter_ask_form_user_slot_favorite_subject:
   
-  - text: Ποιό είναι το αγαπηνένο σου μάθημα;
-  - text: Ποιό μάθημα σου αρέσει πιο πολύ;
-
+  - text: What's your favourite subject?
+  - text: Which subject do you like the most?
 
 
   utter_introduction_to_tour:
@@ -165,14 +151,13 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Εμένα η Ιστορία. Μάλιστα θέλω να γίνω ξεναγός όταν μεγαλώσω και για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το Χρυσό Στεφάνι Μυρτιάς στους επισκέπτες μας.
+    text: Mine is History. In fact, I want to become a tour guide when I get older. In my free time, I stand here and give our visitors information about the golden myrtle wreath.
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Εμένα το ονειρό μου είναι να γίνω ξεναγός. Για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το Χρυσό Στεφάνι Μυρτιάς στους επισκέπτες μας.
-
+    text: My dream is to become a tour guide. In my free time, I stand here and give our visitors information about the golden myrtle wreath.
 
 
   utter_ask_form_exhibit_slot_interested:
@@ -180,38 +165,50 @@ responses:
     - type: slot
       name: flag_exhibit_utters
       value: "0"
-    text: Θα ρωτήσεις κάτι ακόμα ή τέλος;
+    text: Would you like to ask a final question?
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "0"
+    text: Any final question?
 
   - condition:
     - type: slot
       name: flag_exhibit_utters
       value: "1"
-    text: Θέλεις να συνεχίσουμε ή βαρέθηκες;
+    text: Would you want us to keep on?
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "1"
+    text: Shall we go on?
 
   
-  - text: Θα σε ενδιέφερε να πω και σε σένα μερικά πραγματάκια για το Χρυσό Στεφάνι;
-  - text: Εσύ θα ήθελες να μάθεις για το Χρυσό Στεφάνι Μυρτιάς;
-  - text: Θέλεις να σου δώσω και εσένα πληροφορίες για το Χρυσό Στεφάνι;
-
-
+  - text: Would it interest you to listen about the wreath?
+  - text: Would you like to learn more about the wreath?
+  - text: Are you interested in listening to some facts about the wreath?
+  - text: Shall we continue with information about the wreath?
 
   
 
   utter_say_thanks:
-  - text: Ευχαριστώ πολύ. 
+  - text: Thanks a lot. 
   utter_say_thanks_deny:
-  - text: Εντάξει. Καλή συνέχεια.
+  - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Γεια σου. Είμαι ο Ίντι, το ρομπότ του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
+  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
 
  
 
   
   utter_say_following:
-  - text: Μπορώ όμως να σου πω το εξής.
-  - text: Εναλλακτικά όμως θα σου πω το εξής.
-  
+  - text: Instead, I can tell you this.
+  - text: Alternatively, I could tell you this.
+  - text: Instead, listen to this.
+
 
 
   utter_exhibit_not_changed:
@@ -219,44 +216,42 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Εντάξει. Συνεχίζουμε.
+    text: That's great. Let's continue. Should you want to stop, just let me know.
   
-  - text: Εντάξει {name}. Συνεχίζουμε.
+  - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ωραία. Σε ακούω.
+    text: Great. I'm listening.
 
-  - text: Ωραία {name}. Σε ακούω.
-
+  - text: Great {name}. I'm listening.
 
 
   utter_fallback_1st_time:
-  - text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία. 
-  - text: Λυπάμαι, δεν το γνωρίζω αυτό. 
+  - text: I am sorry. I don't know this. 
+  - text: I am so sorry. I don't possess such information.
+  - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: Λυπάμαι ούτε αυτό το γνωρίζω. 
-  - text: Δεν διαθέτω ούτε αυτή τη πληροφορία. 
+  - text: I am deeply sorry. I don't know this either. 
+  - text: I don't possess such information, too.
+  - text: Many apologies. Neither do I know this.
 
 
   utter_fallback_3rd_time:
-  - text: Λυπάμαι δεν γνωρίζω τίποτα από ότι επιθυμείς.
+  - text: This makes me sad. I am unable to answer anything you desire.
+
 
 
   utter_fallback_user:
-  - text: Θα σου πω από μόνος κάτι.
-  - text: Ας σου πω από μόνος μου
-
-
-
-
-
+  - text: Instead, I will tell you this.
+  - text: Alternatively, I will give you the following piece of information.
+  - text: Instead, listen to this.
 
 
   utter_say_goodbye:
@@ -264,104 +259,157 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Καλή συνέχεια. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+    text: Have a nice day. Should you need me again, you know where to find me.
 
-  - text: Καλή συνέχεια {name}. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
+  - text: Have a nice day {name}. Should you need me again, you know where to find me.
+  - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
   utter_say_only_name:
-  - text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?
+  - text: I am a little confused. Can you tell me only your name?
 
   utter_ask_confirmation_to_reset:
-  - text: Είσαι σίγουρος ότι θέλεις να κάνω επανακίνηση;
+  - text: Are you sure you want me to restart?
 
   utter_reset_slots:
-  - text: Επανακίννηση
+  - text: Restarting..
 
   utter_abort_reset:
-  - text: Ακύρωση Επανακίννησης
+  - text: Abort restarting
 
-  utter_react_to_silence_1st:
+
+
+  utter_react_to_silence_final:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ψιτ, είσαι ακόμα εδώ; 
+    text: I guess you've left without saying goodbye. Bye bye then.
 
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Είσαι ακόμα εδώ;
+  - text: I guess you've left without saying goodbye. Bye bye {name}.
 
 
-  - text: Ψιτ {name}, είσαι ακόμα εδώ; 
-  - text: Είσαι ακόμα εδώ {name}; 
-
-  utter_react_to_silence_2nd:
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο.
-
-  - text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο {name}.
 
   utter_repeat:
-  - text: Επαναλαμβάνω.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Hey, are you still there? I repeat.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Is anybody out there? Let me repeat the question.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard for you? Let me repeat once again. 
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: You are quite shy! Let me repeat the question for you.
 
 
 
+  - text: Hey {name}, are you still there? I repeat.
+  - text: You are quite shy {name}! Let me repeat the question for you.
+  - text: Was it too hard for you {name}? Let me repeat once again.
+  - text: Is anybody out there? Let me repeat the question.
 
-  utter_silent_user:
-  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου κάτι.
-  - text: Θα σου πω από μόνος μου κάτι αφού δεν ρωτάς εσύ.
 
 
+  utter_silent_user_1:
+
+
+  - text: Hey, are you still there?
+  - text: Are you still there? 
+  - text: You are quite shy. Let me help you.
+  - text: Oh! A shy visitor!
+  - text: Do you need help? Let me repeat.
+
+
+
+  utter_silent_user_2:
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are not asking anything, I will tell you this.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: I was waiting for you to make a question. So, let me tell you this.
+
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard? Let me make it easier for you.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are shy, I am going to help you.
+
+
+  - text: Since you are not asking anything {name}, I will tell you this.
+  - text: I was waiting for you to make a question {name}. So, let me tell you this.
+  - text: Was it too hard {name}? Let me make it easier for you.
+  - text: Since you are shy {name}, I am going to help you.
 
 
   utter_exhibit_finish:
-  - text: Νομίζω έχουμε καλύψει τα πάντα για το χρυσό στεφάνι. 
+  - text: I think we have already covered every detail regarding the exhibit. 
+  - text: I have already told you everything I know about the golden myrtle wreath.
   
   utter_exhibit_enough:
-  - text: Δεν ξέρω αν κουράστηκες με τόσες πολλές πληροφορίες.
-  - text: Ήδη καλύψαμε πολλά πράγματα για το στεφάνι.
-
-
-
+  - text: You might have got tired with all these details.
+  - text: We have already covered a wealth of information.
 
   
   utter_say_current_exhibit:
-  - text: Αυτή τη στιγμή μιλάμε για το χρυσό στεφάνι μυρτιάς.
+  - text: We are talking about the golden myrtle wreath.
 
   utter_exhibit_utters_enough:
-  - text: Νομίζω είπαμε αρκετά.
+  - text: I think we had enough.
 
   utter_end_of_tour:
-  - text: Κάπου εδώ η ξενάγηση μας τελειώνει.
-  - text: Η ξενάγηση μας έφτασε στο τέλος.
-
-
-
-
-
-
+  - text: At this point, our tour has come to an end.
+  - text: At this point, our tour has finished.
+  - text: That's the end of our tour.
 
   
   utter_say_name:
-  - text: Με λένε Ίντι. Είμαι το ρομπότ του μουσείου.
+  - text: I am Indy. I am the robot of the museum.
 
   utter_say_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια.
+  - text: I am one robotic-year old, which corresponds to eight human years.
 
   utter_say_occupation:
-  - text: Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: If I were a human being, I would be in the third grade of primary school.
 
   utter_say_favorite_subject:
-  - text: Καλό και αυτό. Το δικό μου αγαπημένο μάθημα είναι η Ιστορία.
+  - text: Oh how interesting! My favourite course is History.
 
   utter_say_fine:
-  - text: Είμαι πολύ χαρούμενος που μου κάνεις παρέα.
-
+  - text: I am really happy since you are hanging out with me.
 
 
 actions:
@@ -417,6 +465,7 @@ actions:
   - action_set_slot_wreath_intents
   - action_set_slot_iterate_count
   - action_say_exhibit
+  - action_set_slot_capabilities
 
 
 entities:
@@ -482,7 +531,6 @@ slots:
     - type: custom
       action: action_set_slot_fallback_count
 
- 
 
   slot_silence_count:
     type: float
@@ -512,7 +560,7 @@ slots:
 
   slot_rule_intents:
     type: any
-    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_exhibit"]
+    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_greet"]
     influence_conversation: false
     mappings:
     - type: custom
@@ -534,6 +582,15 @@ slots:
     - type: custom
       action: action_set_slot_iterate_count
 
+  slot_capabilities: 
+    type: any
+    initial_value: [["Make a question and I'll answer. For instance, you could ask me how the museum acquired the wreath or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask me how the wreath is related to burial rituals.",  "Make a question and I'll answer. For instance, you could ask me when it dates back or what material it is made of.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me what material the wreath is made of or why it is an important find.",   "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me why golden wreaths were used in ancient times or how they were linked to burial rituals.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the wreath was acquired by the museum or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me how it was manufactured or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me what material it is made of or for what reason golden wreaths were used in ancient times.",  "Challenge me. Ask me something. For instance, you could ask me why it is such an important discovery or how it was acquired by the museum."], [["utter_say_acquisition", "utter_say_creation"], ["utter_say_burial"], ["utter_say_dating", "utter_say_material"], ["utter_say_material", "utter_say_importance"], ["utter_say_use", "utter_say_burial"], ["utter_say_acquisition", "utter_say_dating"], ["utter_say_creation", "utter_say_dating"], ["utter_say_material", "utter_say_use"], ["utter_say_importance", "utter_say_acquisition"]]]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_capabilities
+
+
 forms:
   form_user:
     required_slots:
@@ -542,10 +599,10 @@ forms:
       - slot_occupation
       - slot_favorite_subject
 
-      
+
 
   form_exhibit:
     required_slots:
       - slot_interested
 
-  
+

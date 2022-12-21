@@ -38,40 +38,35 @@ intents:
 responses:
 
   utter_introduce_exhibit:
-  - text:  Ο Πάπυρος του Δερβενίου θεωρείται το αρχαιότερο βιβλίο της Ευρώπης και αποτελεί ένα από τα πολυτιμότερα εκθέματα του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
-  
+  - text:  The Derveni Papyrus is considered the oldest book in Europe and is one of the most treasured exhibits of the Archaeological Museum of Thessaloniki.
 
   utter_say_content:
-  - text: Στον πάπυρο αναγράφεται το κείμενο ενός βιβλίου, από το οποίο δεν σώζονται ούτε η αρχή ούτε το τέλος. Αρχικά ο συγγραφέας, ένας μάντης ή χρησμολόγος, απευθύνεται σε επίδοξους μύστες και περιγράφει τις λατρευτικές πρακτικές που σχετίζονται με τη μεταθανάτια τύχη των ψυχών, ενώ στη συνέχεια αναπτύσσεται ένας ορφικός ύμνος. Ο ύμνος αυτός συνόδευε τις τελετουργίες των μυστών, για τους οποίους προοριζόταν το βιβλίο.
-
+  - text: The papyrus contains the text of a book, of which neither the beginning nor the end survives. First, the author, a prophet or soothsayer, addresses candidates for initiation and describes devotional practices relating to the fate of the soul after death, while an Orphic hymn is developed afterward. This hymn accompanied the initiation rites for those to whom the book is addressed.
   
   utter_say_language:
-  - text: Το κείμενο είναι γραμμένο με μελάνι σκούρου χρώματος σε μεγαλογράμματη γραφή και στην αττική διάλεκτο, με ορισμένα ιωνικά στοιχεία.
-  
+  - text: The text is written in dark ink in capital letters and in the Attic dialect, with certain Ionian elements.
+
   utter_say_creation:
-  - text: Η γραφή του παπύρου χρονολογείται ανάμεσα στο 340 και στο 320 προ Χριστού,  το βιβλίο όμως το οποίο αντιγράφεται σε αυτόν είναι τουλάχιστον έναν αιώνα παλαιότερο, περίπου στο 420 με 410 προ Χριστού.
-  
+  - text: The manuscript itself dates from between 340 and 320 BC, but was copied from a much older work, thought to have been at least a century older dated to around 420-410 BC.
 
   utter_say_exposition:
-  - text: Το μοναδικό αυτό εύρημα εκτέθηκε για πρώτη φορά στο Αρχαιολογικό Μουσείο Θεσσαλονίκης το 1962. Από το 2013 ο πάπυρος φιλοξενείται στη μόνιμη έκθεση Ο Χρυσός των Μακεδόνων, και είναι τοποθετημένος σε οριζόντια προθήκη με ειδικές συνθήκες υγρασίας και θερμοκρασίας για την ασφαλή διατήρησή του. 
+  - text: This unique find was exhibited for the first time at the Archaeological Museum of Thessaloniki in 1962. Since 2013, the papyrus has been hosted in the permanent exhibition The Gold of Macedon, placed in a horizontal showcase with special humidity and temperature conditions for its proper preservation.
   
   utter_say_size:
-  - text: Το τμήμα του παπύρου που σώζεται και εκτίθεται στο Μουσείο έχει ύψος 9,4 εκατοστά και αποτελεί το επάνω μέρος ενός κυλίνδρου που είχε συνολικό μήκος περίπου 3 μέτρα.
-
+  - text: The part of the papyrus that is preserved and exhibited in the Museum is 9.4 centimeters high and constitutes the upper part of a cylinder that had a total length of about 3 meters.
 
   utter_say_finding:
-  - text: Ο πάπυρος βρέθηκε τον Ιανουάριο του 1962 κατά την ανασκαφή ενός τάφου στο νεκροταφείο της αρχαίας Λητής, στο Δερβένι Θεσσαλονίκης, από τον ανασκαφέα Πέτρο Θέμελη. Σύμφωνα με τα λεγόμενά του, ο πάπυρος θύμιζε καμένη εφημερίδα. Το κλίμα της Ελλάδας δεν ευνοεί τη διατήρηση παπύρων. Ωστόσο, στην περίπτωση του Δερβενίου ο πάπυρος διασώθηκε ακριβώς επειδή απανθρακώθηκε. 
-  
+  - text: The papyrus was found in a cist grave in January 1962 during the excavation conducted by Petros Themelis at the cemetery of ancient Leti, in Derveni, Thessaloniki. According to his words, it resembled a burnt newspaper. The Greek climate does not allow for the preservation of papyri. However, in the case of Derveni, the papyrus survived only because it was partially charred since it was found amid the remains of the funeral pyre.
+
   utter_say_importance:
-  - text: Πρόκειται για το αρχαιότερο βιβλίο της Ευρώπης και αποτέλεσε την πρώτη ελληνική εγγραφή στο Διεθνή κατάλογο της Ουνέσκο «Μνήμη του Κόσμου», τον Οκτώβριο του 2015.
-  
+  - text: It is the oldest book in Europe and was the first Greek entry in the UNESCO International "Memory of the World” register in October 2015.
+
   utter_say_writer:
-  - text: Οι θεωρίες πίσω από τον συγγραφέα του βιβλίου είναι πάρα πολλές, ωστόσο η ταυτότητα του παραμένει ακόμα άγνωστη. Μία από τις εκδοχές θέλει τον συγγραφέα του βιβλίου να ταυτίζεται με τον μάντη και θεολόγο Ευθύφρωνα από τα Πρόσπαλτα Αττικής.
-  
- 
+  - text: Many hypotheses have been proposed about the author of the book, whose identity remains unknown. One of them identifies the author with a prophet and theologian, Euthyphron from Prospalta of Attica.
 
   utter_say_making:
-  - text: Ο πάπυρος προέρχεται από την επεξεργασία του φυτού Cyperus Papyrus που ευδοκιμεί στα έλη του ποταμού Νείλου. Για την κατασκευή, το φυτό τεμαχιζόταν σε λεπτές λωρίδες. Αυτές τοποθετούνταν σε μια υγρή επιφάνεια ώστε μόλις να εφάπτονται, και επάνω τους ακολουθούσε μια δεύτερη στρώση λωρίδων τοποθετημένων κάθετα. Με ένα πλατύ σφυρί ένωναν τις δύο στρώσεις και στη συνέχεια το φύλλο στέγνωνε στον ήλιο. 
+  - text: Papyrus comes from the processing of the Cyperus Papyrus plant that grows in the marshes of the Nile Delta. For its manufacture, the plant was cut into thin strips. These were placed on a hard and wet surface laid side by side, and on top of them, the second set of strips followed placed at right angles atop the first set. A wide-surfaced hammer was used to bond the two layers and then the sheet was dried in the sun. 
+
 
 
   utter_say_capabilities: 
@@ -79,7 +74,7 @@ responses:
   - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πως κατασκευάστηκε ο πάπυρος ή από ποιόν ανακαλύφθηκε.
   - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις για τις διαστάσεις του παπύρου ή ποιά είναι η αξία του.
   - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πότε ανακαλύφθηκε ο πάπυρος ή ποιό είναι το περιεχόμενο του.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις  από ποιόν ανακαλύφθηκε ή σε ποιά γλώσσα είναι γραμμένος.
+  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις από ποιόν ανακαλύφθηκε ή σε ποιά γλώσσα είναι γραμμένος.
   - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις ποιά είναι η αξία του παπύρου ή πως κατασκευάζονταν οι πάπυροι.
   - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πότε ανακαλύφθηκε ο πάπυρος ή από ποιόν γράφτηκε.
   - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις ποιό είναι το περιεχόμενό του ή ποιά είναι η γλώσσα γραφής του.
@@ -94,46 +89,58 @@ responses:
 
 
 
+
+
+
+
+
   utter_say_nice_to_meet_you:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Χαίρω πολύ. 
+    text: Nice to meet you. 
 
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Επιτέλους σε γνωρίζω.
+    text: Finally we're meeting each other.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: So happy to meet you.
 
 
-  - text: Χαίρω πολύ {name}.
-  - text: Επιτέλους σε γνωρίζω {name}.
+  - text: Nice to meet you {name}.
+  - text: Finally we're meeting each other {name}.
+  - text: So happy to meet you {name}.
 
   
   utter_guess_class:
-  - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
+  - text: Let me guess. Since you are {age} years old, you should {grade}.
 
   utter_wrong_age:
-  - text: Τί λες βρε ψεύτη. Σιγά μην είσαι και {name}. Τέλος πάντων ας σε πιστέψω.
+  - text: Ha ha ha. Very funny. Anyway.
 
   utter_say_my_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: I am one robotic-year old. This corresponds to eight human years. If I were a human, I would be in the third grade of primary school.
 
 
   utter_ask_form_user_slot_name:
   
-  - text: "Εσένα πώς σε λένε;"   
-  - text: "Εσύ ποιός είσαι;"
-  - text: "Ποιό είναι το όνομά σου;"
+  - text: "What's your name?"   
+  - text: "Who are you?"
+  - text: How about your name?
+  - text: Tell me your name.
 
 
   utter_ask_form_user_slot_age:
 
-  - text: Πόσων ετών είσαι; 
-  - text: "Ποιά είναι η ηλικία σου;" 
-  - text: "Πόσων χρόνων είσαι;"
+  - text: How old are you? 
+  - text: "What is your age?" 
 
 
   utter_ask_form_user_slot_occupation:
@@ -142,32 +149,27 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Σε ποιά τάξη είσαι;
+    text: Which grade are you in?
 
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False  
-    text: Τί τάξη πας;
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Με τί ασχολείσαι;
+    text: What do you do for a living?
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Τί δουλειά κάνεις;
+    text: What is your profession?
 
 
 
   utter_ask_form_user_slot_favorite_subject:
   
-  - text: Ποιό είναι το αγαπηνένο σου μάθημα;
-  - text: Ποιό μάθημα σου αρέσει πιο πολύ;
+  - text: What's your favourite subject?
+  - text: Which subject do you like the most?
 
 
   utter_introduction_to_tour:
@@ -175,13 +177,13 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Εμένα η Ιστορία. Μάλιστα θέλω να γίνω ξεναγός όταν μεγαλώσω και για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το Χρυσό Στεφάνι Μυρτιάς στους επισκέπτες μας.
+    text: Mine is History. In fact, I want to become a tour guide when I get older. In my free time, I stand here and give our visitors information about the Papyrus of Derveni.
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Εμένα το ονειρό μου είναι να γίνω ξεναγός. Για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για το Χρυσό Στεφάνι Μυρτιάς στους επισκέπτες μας.
+    text: My dream is to become a tour guide. In my free time, I stand here and give our visitors information about the Papyrus of Derveni.
 
 
   utter_ask_form_exhibit_slot_interested:
@@ -189,38 +191,50 @@ responses:
     - type: slot
       name: flag_exhibit_utters
       value: "0"
-    text: Θα ρωτήσεις κάτι ακόμα ή τέλος;
+    text: Would you like to ask a final question?
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "0"
+    text: Any final question?
 
   - condition:
     - type: slot
       name: flag_exhibit_utters
       value: "1"
-    text: Θέλεις να συνεχίσουμε ή βαρέθηκες;
+    text: Would you want us to keep on?
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "1"
+    text: Shall we go on?
 
   
-  - text: Θα σε ενδιέφερε να πω και σε σένα μερικά πραγματάκια για τον πάπυρο;
-  - text: Εσύ θα ήθελες να μάθεις για τον πάπυρο του Δερβενίου;
-  - text: Θέλεις να σου δώσω και εσένα πληροφορίες για τον πάπυρο;
-
-
+  - text: Would it interest you to listen about the papyrus?
+  - text: Would you like to learn more about the papyrus?
+  - text: Are you interested in listening to some facts about the papyrus?
+  - text: Shall we continue with information about the papyrus?
 
   
 
   utter_say_thanks:
-  - text: Ευχαριστώ πολύ. 
+  - text: Thanks a lot. 
   utter_say_thanks_deny:
-  - text: Εντάξει. Καλή συνέχεια.
+  - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Γεια σου. Είμαι ο Ίντι, το ρομπότ του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
+  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
 
  
 
   
   utter_say_following:
-  - text: Μπορώ όμως να σου πω το εξής.
-  - text: Εναλλακτικά όμως θα σου πω το εξής.
-  
+  - text: Instead, I can tell you this.
+  - text: Alternatively, I could tell you this.
+  - text: Instead, listen to this.
+
 
 
   utter_exhibit_not_changed:
@@ -228,44 +242,42 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Εντάξει. Συνεχίζουμε.
+    text: That's great. Let's continue. Should you want to stop, just let me know.
   
-  - text: Εντάξει {name}. Συνεχίζουμε.
+  - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ωραία. Σε ακούω.
+    text: Great. I'm listening.
 
-  - text: Ωραία {name}. Σε ακούω.
-
+  - text: Great {name}. I'm listening.
 
 
   utter_fallback_1st_time:
-  - text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία. 
-  - text: Λυπάμαι, δεν το γνωρίζω αυτό. 
+  - text: I am sorry. I don't know this. 
+  - text: I am so sorry. I don't possess such information.
+  - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: Λυπάμαι ούτε αυτό το γνωρίζω. 
-  - text: Δεν διαθέτω ούτε αυτή τη πληροφορία. 
+  - text: I am deeply sorry. I don't know this either. 
+  - text: I don't possess such information, too.
+  - text: Many apologies. Neither do I know this.
 
 
   utter_fallback_3rd_time:
-  - text: Λυπάμαι δεν γνωρίζω τίποτα από ότι επιθυμείς.
+  - text: This makes me sad. I am unable to answer anything you desire.
+
 
 
   utter_fallback_user:
-  - text: Θα σου πω από μόνος κάτι.
-  - text: Ας σου πω από μόνος μου
-
-
-
-
-
+  - text: Instead, I will tell you this.
+  - text: Alternatively, I will give you the following piece of information.
+  - text: Instead, listen to this.
 
 
   utter_say_goodbye:
@@ -273,102 +285,158 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Καλή συνέχεια. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+    text: Have a nice day. Should you need me again, you know where to find me.
 
-  - text: Καλή συνέχεια {name}. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
+  - text: Have a nice day {name}. Should you need me again, you know where to find me.
+  - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
   utter_say_only_name:
-  - text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?
+  - text: I am a little confused. Can you tell me only your name?
 
   utter_ask_confirmation_to_reset:
-  - text: Είσαι σίγουρος ότι θέλεις να κάνω επανακίνηση;
+  - text: Are you sure you want me to restart?
 
   utter_reset_slots:
-  - text: Επανακίννηση
+  - text: Restarting..
 
   utter_abort_reset:
-  - text: Ακύρωση Επανακίννησης
+  - text: Abort restarting
 
-  utter_react_to_silence_1st:
+
+
+  utter_react_to_silence_final:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ψιτ, είσαι ακόμα εδώ; 
+    text: I guess you've left without saying goodbye. Bye bye then.
 
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Είσαι ακόμα εδώ;
+  - text: I guess you've left without saying goodbye. Bye bye {name}.
 
 
-  - text: Ψιτ {name}, είσαι ακόμα εδώ; 
-  - text: Είσαι ακόμα εδώ {name}; 
-
-  utter_react_to_silence_2nd:
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο.
-
-  - text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο {name}.
 
   utter_repeat:
-  - text: Επαναλαμβάνω.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Hey, are you still there? I repeat.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Is anybody out there? Let me repeat the question.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard for you? Let me repeat once again. 
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: You are quite shy! Let me repeat the question for you.
 
 
 
+  - text: Hey {name}, are you still there? I repeat.
+  - text: You are quite shy {name}! Let me repeat the question for you.
+  - text: Was it too hard for you {name}? Let me repeat once again.
+  - text: Is anybody out there? Let me repeat the question.
 
-  utter_silent_user:
-  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου κάτι.
-  - text: Θα σου πω από μόνος μου κάτι αφού δεν ρωτάς εσύ.
 
 
+  utter_silent_user_1:
+
+
+  - text: Hey, are you still there?
+  - text: Are you still there? 
+  - text: You are quite shy. Let me help you.
+  - text: Oh! A shy visitor!
+  - text: Do you need help? Let me repeat.
+
+
+
+  utter_silent_user_2:
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are not asking anything, I will tell you this.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: I was waiting for you to make a question. So, let me tell you this.
+
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard? Let me make it easier for you.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are shy, I am going to help you.
+
+
+  - text: Since you are not asking anything {name}, I will tell you this.
+  - text: I was waiting for you to make a question {name}. So, let me tell you this.
+  - text: Was it too hard {name}? Let me make it easier for you.
+  - text: Since you are shy {name}, I am going to help you.
 
 
   utter_exhibit_finish:
-  - text: Νομίζω έχουμε καλύψει τα πάντα από τον πάπυρο. 
+  - text: I think we have already covered every detail regarding the exhibit. 
+  - text: I have already told you everything I know about the Papyrus of Derveni.
   
   utter_exhibit_enough:
-  - text: Δεν ξέρω αν κουράστηκες με τόσες πολλές πληροφορίες.
-  - text: Ήδη καλύψαμε πολλά πράγματα για τον πάπυρο.
-
-
+  - text: You might have got tired with all these details.
+  - text: We have already covered a wealth of information.
 
   
   utter_say_current_exhibit:
-  - text: Αυτή τη στιγμή μιλάμε για τον πάπυρο
+  - text: We are talking about the Papyrus of Derveni.
 
   utter_exhibit_utters_enough:
-  - text: Νομίζω είπαμε αρκετά.
+  - text: I think we had enough.
 
   utter_end_of_tour:
-  - text: Κάπου εδώ η ξενάγηση μας τελειώνει.
-  - text: Η ξενάγηση μας έφτασε στο τέλος.
-
-
-
-
-
-
+  - text: At this point, our tour has come to an end.
+  - text: At this point, our tour has finished.
+  - text: That's the end of our tour.
 
   
   utter_say_name:
-  - text: Με λένε Ίντι. Είμαι το ρομπότ του μουσείου.
+  - text: I am Indy. I am the robot of the museum.
 
   utter_say_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια.
+  - text: I am one robotic-year old, which corresponds to eight human years.
 
   utter_say_occupation:
-  - text: Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: If I were a human being, I would be in the third grade of primary school.
 
   utter_say_favorite_subject:
-  - text: Καλό και αυτό. Το δικό μου αγαπημένο μάθημα είναι η Ιστορία.
+  - text: Oh how interesting! My favourite course is History.
 
   utter_say_fine:
-  - text: Είμαι πολύ χαρούμενος που μου κάνεις παρέα.
+  - text: I am really happy since you are hanging out with me.
+
 
 
 
@@ -426,6 +494,7 @@ actions:
   - action_set_slot_papyrus_intents
   - action_set_slot_iterate_count
   - action_say_exhibit
+  - action_set_slot_capabilities
 
 
 entities:
@@ -521,7 +590,7 @@ slots:
 
   slot_rule_intents:
     type: any
-    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_exhibit"]
+    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_greet"]
     influence_conversation: false
     mappings:
     - type: custom
@@ -542,6 +611,14 @@ slots:
     mappings:
     - type: custom
       action: action_set_slot_iterate_count
+
+  slot_capabilities: 
+    type: any
+    initial_value: [["Make a question and I'll answer. For instance, you could ask me where the papyrus is exhibited or who its author is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me how the papyrus was manufactured or where it was found.",  "Challenge me. Ask me something. For instance, you could ask about the dimensions of the papyrus or why it is such an important find.",  "Make a question and I'll answer. For instance, you could ask me when the papyrus was found or what its content is about.",   "Ask a question and I will respond as long as I know the answer. For instance, you could ask me by whom the papyrus was found or what language is used.",  "Challenge me. Ask me something. For instance, you could ask why the papyrus is such an important find or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask where it is exhibited or what its size is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me when it was found or by whom it was written.",  "Challenge me. Ask me something. For instance, you could ask what the content of the papyrus is about or in which language it was written."], [["utter_say_exhibition", "utter_say_writer"], ["utter_say_making","utter_say_finding"], ["utter_say_size", "utter_say_importance"], ["utter_say_finding", "utter_say_importance"], ["utter_say_finding", "utter_say_language"], ["utter_say_importance", "utter_say_making"], ["utter_say_exhibition", "utter_say_size"], ["utter_say_finding", "utter_say_writer"], ["utter_say_content", "utter_say_language"]]]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_capabilities
 
 forms:
   form_user:

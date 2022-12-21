@@ -42,8 +42,8 @@ class ActivateExhibitForm(Action):
 
             return [SlotSet("slot_list_exhibit_utters", slot_list_exhibit_utters), SlotSet("flag_exhibit_utters",flag_exhibit_utters), SlotSet("slot_iterate_count", slot_iterate_count), SlotSet("slot_interested",None),  FollowupAction("form_exhibit")]
 
-        #elif (len(slot_list_exhibit_utters)<=4) and (np.mod(len(slot_list_exhibit_utters),3)==0):
-        elif (slot_iterate_count >= 4) and (np.mod(slot_iterate_count,2)==0):
+        # elif (slot_iterate_count >= 4) and (np.mod(slot_iterate_count,2)==0):
+        elif (slot_iterate_count == 5):
 
             flag_exhibit_utters = "1"
             dispatcher.utter_message(response="utter_exhibit_enough")
@@ -284,8 +284,6 @@ class SayBye(Action):
         domain: Dict) -> List[EventType]:
 
         slot_name = tracker.slots.get("slot_name")
-        if slot_name == None:
-            slot_name = ""
 
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()]
@@ -407,7 +405,7 @@ class ValidateForm(FormValidationAction):
         except:
             print("No number provided")
             dispatcher.utter_message(response="utter_say_my_age")
-            return {"slot_age": 10, "slot_adult":False}
+            return {"slot_age": 30, "slot_adult":True}
 
         if (slot_value <= 2):
             dispatcher.utter_message(response="utter_wrong_age", name="μείον χίλια")
@@ -524,9 +522,9 @@ class ActionSetSlotName(Action):
                 if intent in rule_intents:
                     return []
 
-                wreath_intents = tracker.slots.get("slot_wreath_intents")
-                if intent in wreath_intents:
-                    return []
+                #wreath_intents = tracker.slots.get("slot_wreath_intents")
+                #if intent in wreath_intents:
+                #    return []
 
                 
                 # text = latest_message["text"]
@@ -572,9 +570,9 @@ class ActionSetSlotAge(Action):
                 if intent in rule_intents:
                     return []
 
-                wreath_intents = tracker.slots.get("slot_wreath_intents")
-                if intent in wreath_intents:
-                    return []
+                #wreath_intents = tracker.slots.get("slot_wreath_intents")
+                #if intent in wreath_intents:
+                #    return []
 
 
                 if intent == "intent_age":
@@ -768,8 +766,7 @@ class ResetSlots(Action):
         domain: Dict) -> List[EventType]:
 
         slot_name = tracker.slots.get("slot_name")
-        if slot_name == None:
-            slot_name = ""
+
         # dispatcher.utter_message(response="utter_reset_slots")
         
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
@@ -809,9 +806,9 @@ class ActionFallback(Action):
         if fallback_count==1: #simainei oti prwti fora den katalave
             
             dispatcher.utter_message(response="utter_fallback_1st_time") #+ na ξανακανει την ερωτηση
-            dispatcher.utter_message(response = "utter_say_capabilities")
+            # dispatcher.utter_message(response = "utter_say_capabilities")
 
-            return [UserUtteranceReverted(), SlotSet("slot_fallback_count", fallback_count), SlotSet("slot_silence_count",0)]
+            return [UserUtteranceReverted(), SlotSet("slot_fallback_count", fallback_count), SlotSet("slot_silence_count",0), FollowupAction("action_say_capabilities")]
 
         elif fallback_count==2: #simainei oti deuteri fora den katalave
             
@@ -828,19 +825,21 @@ class ActionFallback(Action):
                 dispatcher.utter_message(response = "utter_say_following")
                 dispatcher.utter_message(response=selected_utter)
             
-                return [UserUtteranceReverted(),  SlotSet("slot_fallback_count", fallback_count), SlotSet("slot_silence_count",0), FollowupAction("action_iterate_form_exhibit")]
+                return [UserUtteranceReverted(),  SlotSet("slot_list_exhibit_utters",exhibit_utters), SlotSet("slot_fallback_count", fallback_count), SlotSet("slot_silence_count",0), FollowupAction("action_iterate_form_exhibit")]
 
             else:
 
-                dispatcher.utter_message(response="utter_exhibit_finish")
+                # dispatcher.utter_message(response="utter_exhibit_finish")
                 slot_name = tracker.slots.get("slot_name")
                 
                 if slot_name == None:
                     slot_name = ""
 
+                dispatcher.utter_message(response="utter_end_of_tour")
                 dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
                 
-                return [UserUtteranceReverted(), SlotSet("slot_fallback_count", fallback_count), SlotSet("slot_silence_count",0)]
+                return [AllSlotsReset(),Restarted()]
+
 
         elif fallback_count==3:
 
@@ -911,20 +910,20 @@ class ActionReactToSilence(Action):
         if (requested_slot!=None):
 
             if (silence_count<3):
-                dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
+                # dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
 
                 events = tracker.events
                 bot_events = [x for x in events if x["event"]=="bot"]
                 bot_event = bot_events[-1]
                 bot_response = bot_event["text"]
-                dispatcher.utter_message(response="utter_repeat")
+                dispatcher.utter_message(response="utter_repeat", name = slot_name)
 
                 dispatcher.utter_message(text=bot_response)
 
                 return [UserUtteranceReverted(),  SlotSet("slot_silence_count",silence_count)]  
             
             elif silence_count>=3:
-                dispatcher.utter_message(response="utter_react_to_silence_2nd", name=slot_name)
+                dispatcher.utter_message(response="utter_react_to_silence_final", name=slot_name)
                 return [AllSlotsReset(),Restarted()]
 
         
@@ -932,13 +931,22 @@ class ActionReactToSilence(Action):
 
             exhibit_utters = tracker.slots.get("slot_list_exhibit_utters")           
 
-            
-            
-            if (len(exhibit_utters)!=0) and (silence_count<=2):
+            if (len(exhibit_utters)!=0) and (silence_count==1):
+                
+                
+                # dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
 
-                dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
+                dispatcher.utter_message(response="utter_silent_user_1")
+                # dispatcher.utter_message(response="utter_say_capabilities")
+                
+                return [UserUtteranceReverted(),  SlotSet("slot_silence_count",silence_count), FollowupAction("action_say_capabilities")]
+            
 
-                dispatcher.utter_message(response="utter_silent_user")
+            elif (len(exhibit_utters)!=0) and (silence_count==2):
+
+                # dispatcher.utter_message(response="utter_react_to_silence_1st", name=slot_name)
+
+                dispatcher.utter_message(response="utter_silent_user_2", name=slot_name)
                 
                 i = random.randint(0, len(exhibit_utters)-1 )	
                 selected_utter=exhibit_utters[i]
@@ -946,21 +954,24 @@ class ActionReactToSilence(Action):
                                 
                 dispatcher.utter_message(response=selected_utter)
 
-                slot_iterate_count = tracker.slots.get("slot_iterate_count")            
-                if not ((slot_iterate_count + 1 >= 4) and (np.mod(slot_iterate_count + 1, 2)==0)):
-                    
-                    dispatcher.utter_message(response="utter_say_capabilities") 
+                slot_iterate_count = tracker.slots.get("slot_iterate_count")  
+
+                # if not ((slot_iterate_count + 1 >= 4) and (np.mod(slot_iterate_count + 1,2)==0)):
+                if (not (slot_iterate_count + 1 == 5)) and (len(exhibit_utters)!=0):
+
+                    # dispatcher.utter_message(response="utter_say_capabilities") 
+                    return [UserUtteranceReverted(),  SlotSet("slot_silence_count",silence_count), SlotSet("slot_list_exhibit_utters",exhibit_utters), FollowupAction("action_say_capabilities")]
                 
 
                 return [UserUtteranceReverted(),  SlotSet("slot_silence_count",silence_count), SlotSet("slot_list_exhibit_utters",exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
             
             elif (len(exhibit_utters)!=0) and (silence_count==3):
-                dispatcher.utter_message(response="utter_react_to_silence_2nd", name=slot_name)
+                dispatcher.utter_message(response="utter_react_to_silence_final", name=slot_name)
                 return [AllSlotsReset(),Restarted()]
 
             elif (len(exhibit_utters)==0):
 
-                dispatcher.utter_message(response="utter_exhibit_finish")
+                dispatcher.utter_message(response="utter_end_of_tour")
                 dispatcher.utter_message(response="utter_say_goodbye", name=slot_name)
 
                 return [AllSlotsReset(), Restarted()]
@@ -1013,8 +1024,28 @@ class ActionSayCapabilites(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
 
-        dispatcher.utter_message(response="utter_say_capabilities")        
-        return []
+        exhibit_utters = tracker.slots.get("slot_list_exhibit_utters")
+        exhibit_capabilities = tracker.slots.get("slot_capabilities")
+
+        capability_sayings = exhibit_capabilities[0]
+        capability_utters = exhibit_capabilities[1]
+
+        indicies = []
+        for utter in exhibit_utters:
+            for i, capability_utter in enumerate(capability_utters):
+                if utter in capability_utter:
+                    indicies.append(i)
+                    
+        if len(indicies):
+            random_choice = random.choice(indicies)	
+        else:
+            random_choice = random.randint(0,len(capability_sayings)-1)
+
+        selected_capability = capability_sayings[random_choice]
+
+        dispatcher.utter_message(text=selected_capability)   
+
+        return [FollowupAction("action_listen")]
 
 
 
@@ -1062,12 +1093,16 @@ class ActionSubmitFormExhibit(Action):
         if (intent in wreath_intents) and (flag_exhibit_utters!="2"): #an rwtise kati autos kai den eimast stin prwti fora
         
             action = "action_say_" + intent[7:]     
-            return [FollowupAction(action)]
+            return [SlotSet("slot_name",slot_name), FollowupAction(action)]
 
 
         flag_exhibit_utters = tracker.slots.get("flag_exhibit_utters")
 
         if (slot_interested == False):
+
+            
+            if flag_exhibit_utters != "2":
+                dispatcher.utter_message(response="utter_end_of_tour")
 
             dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
             return [AllSlotsReset(), Restarted()]
@@ -1079,7 +1114,7 @@ class ActionSubmitFormExhibit(Action):
             if (flag_exhibit_utters=="0"): #an einai 0 simainei oti den exoun minei alla opote tou leei rwta me esi
 
                 dispatcher.utter_message(response="utter_say_ask_me", name=slot_name)            
-                return []
+                return [SlotSet("slot_name",slot_name)]
 
             elif (flag_exhibit_utters=="1"): # an einai 1 simainei ton rwtise an thelei na sinexisei opote leei stin tixi kati
                 
@@ -1090,14 +1125,14 @@ class ActionSubmitFormExhibit(Action):
                 dispatcher.utter_message(response = "utter_exhibit_not_changed", name=slot_name)
                 dispatcher.utter_message(response=selected_utter)
             
-                return [SlotSet("slot_list_exhibit_utters", exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
+                return [SlotSet("slot_name",slot_name), SlotSet("slot_list_exhibit_utters", exhibit_utters), FollowupAction("action_iterate_form_exhibit")]
 
 
             else: #an einai dio simainei rwtise prwti fora opote tha pei capabilities
 
                 dispatcher.utter_message(response="utter_introduce_exhibit")
-                dispatcher.utter_message(response="utter_say_capabilities")            
-                return []
+                # dispatcher.utter_message(response="utter_say_capabilities")            
+                return [SlotSet("slot_name",slot_name), FollowupAction("action_say_capabilities")]
 
 
         
@@ -1120,7 +1155,7 @@ class ActionRepeat(Action):
         bot_event = bot_events[-1]
         bot_response = bot_event["text"]
 
-        dispatcher.utter_message(response="utter_repeat")
+        # dispatcher.utter_message(response="utter_repeat")
         dispatcher.utter_message(text=bot_response)
 
         return [UserUtteranceReverted()]
@@ -1137,7 +1172,13 @@ class ActionSetListUtters(Action):
         return []   
 
 
-
+class ActionSetSlotCapabilities(Action):
+    def name(self):
+        return "action_set_slot_capabilities"  
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
+        
+        return []
 
 class ActionStopTour(Action):
     def name(self):
@@ -1146,8 +1187,6 @@ class ActionStopTour(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain):
         
         slot_name = tracker.slots.get("slot_name")
-        if slot_name == None:
-            slot_name = ""
 
         dispatcher.utter_message(response = "utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()] 
@@ -1247,7 +1286,7 @@ class ActionSayExhibit(Action):
             if slot_name == None:
                 slot_name = ""
 
-            dispatcher.utter_message(response="utter_exhibit_finish")
+            dispatcher.utter_message(response="utter_end_of_tour")
             dispatcher.utter_message(response="utter_say_goodbye", name=slot_name)
 
             return [AllSlotsReset(),Restarted()]

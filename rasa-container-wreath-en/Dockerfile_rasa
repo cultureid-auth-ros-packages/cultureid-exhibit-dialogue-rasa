@@ -17,7 +17,7 @@ USER root
 # RUN python -m pip install rasa[transformers]
 # RUN python -m pip install nltk
 RUN python -m pip install spacy
-RUN python -m spacy download el_core_news_lg
+RUN python -m spacy download en_core_web_lg
 # RUN python -m spacy link el_core_news_md el
 
 # Copy actions folder to working directory

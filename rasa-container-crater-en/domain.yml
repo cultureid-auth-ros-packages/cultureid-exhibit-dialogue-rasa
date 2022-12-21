@@ -32,58 +32,54 @@ intents:
   - intent_how_are_you
   - intent_what_is_your_name
   - intent_what_is_your_age
-
+  
 
 
 responses:
 
   utter_introduce_exhibit:
-  - text: O περίφημος χάλκινος κρατήρας αποτελεί το σπουδαιότερο εύρημα του νεκροταφείου του Δερβενίου. Το αριστουργηματικό και μοναδικό στο είδος του έργο σώζεται ακέραιο και εκτίθεται στο Αρχαιολογικό Μουσείο Θεσσαλονίκης.
-
+  - text: The famous bronze krater is one of the most important finds of the Derveni cemetery. This unique masterpiece is preserved entirely and is exhibited at the Archaeological Museum of Thessaloniki.
+  
   utter_say_making:
-  - text: Το αγγείο είναι κατασκευασμένο από δύο χάλκινα σφυρήλατα ελάσματα, ένα για το σώμα και ένα για το επάνω μέρος του λαιμού. Αντίθετα, οι ελικωτές λαβές και η βάση του αγγείου, όπως και τα αγαλμάτια στον ώμο του, κατασκευάστηκαν με χύτευση σε μήτρα και φέρουν σφυρήλατες πρόσθετες διακοσμητικές λεπτομέρειες.
+  - text: The vessel is made of two hammered bronze plates, one for the body and one for the upper part of the neck. Conversely, the vessel's spiral handles and base, as well as the statuettes on its shoulder are cast, bearing added hammered decorative elements.
 
   utter_say_belonging:
-  - text: Στο χείλος του αγγείου υπάρχει χαραγμένη με άργυρο μια επιγραφή. Είναι γραμμένη στη θεσσαλική διάλεκτο και αναφέρει «είμαι ο κρατήρας του Αστίωνα του γιού του Αναξαγόρα από τη Λάρισα». Ωστόσο, αναπάντητο παραμένει το ερώτημα εάν ο Αστίωνας ήταν ο νεκρός του τάφου ή ο προηγούμενος ιδιοκτήτης του κρατήρα.
+  - text: An inscription on the rim of the vase is inscribed in silver letters. It is written in the Thessalian dialect and states "I am the krater of Astion the son of Anaxagoras from Larissa". Whether this Astion was the occupant of the tomb or a previous owner of the krater is a question that remains unanswered. 
 
   utter_say_creation:
-  - text: Ο κρατήρας χρονολογείται στα 330 με 320 προ Χριστού και πιθανότατα κατασκευάστηκε σε κάποιο εργαστήριο της Μακεδονίας. Ο καλλιτέχνης, που μάλλον προερχόταν από μια ιωνική πόλη της Χαλκιδικής,  φαίνεται πως γνώριζε καλά την αττική τέχνη της εποχής και πιθανώς είχε μαθητεύσει στην Αθήνα.
+  - text: The krater dates back to 330-320 BC. and was probably manufactured in a Macedonian workshop. It seems that the artist, who probably came from an Ionian city in Chalcidice, had been well acquainted with Attic art styles and was probably apprenticed in Athens.
 
   utter_say_depiction:
-  - text: Στην κύρια όψη του κρατήρα η ανάγλυφη παράσταση απεικονίζει τον ιερό γάμο του θεού Διόνυσου με την Αριάδνη, με τον γυμνό θεό να ακουμπά το πόδι του στον μηρό της συζύγου του, σε μια ερωτική κίνηση.
+  - text: On the main face of the krater, the sacred marriage of the god Dionysus with Ariadne is depicted, with the naked god resting his leg on his wife's thigh, in an erotic gesture.
 
   utter_say_material:
-  - text: Ο κρατήρας αν και μοιάζει χρυσός, δεν είναι. Είναι κατασκευασμένος από μπρούντζο, δηλαδή από κράμα χαλκού και κασσίτερου. Η έντονα χρυσίζουσα επιφάνειά του οφείλεται στην πολύ υψηλή περιεκτικότητα του συγκεκριμένου κράματος  σε κασσίτερο. Το ίδιο χρυσαφί χρώμα έχουν πολλά από τα χάλκινα αγγεία των τάφων του Δερβενίου.
+  - text: Although the krater seems to be made of gold, it is not. It is made of bronze, i.e. an alloy of copper and tin. Its lovely golden colour is due to the alloy’s very high tin content. Many of the bronze vessels from the Derveni tombs have the same golden color.
 
   utter_say_importance:
-  - text: Ο Κρατήρας του Δερβενίου αποτελεί ένα δημιούργημα υψηλής τεχνογνωσίας και άρτιας εκτέλεσης. Με ύψος 90 εκατοστών και βάρος 40 κιλών είναι το μεγαλύτερο σε μέγεθος μετάλλινο αγγείο  της κλασικής αρχαιότητας, που φέρει ανάγλυφη διακόσμηση σε όλη του την επιφάνεια.
+  - text: The Derveni Krater is a masterpiece of unparalleled craftsmanship. It stands 90 cm tall and weighs 40 kilos. It is the largest metal vase from Classical Antiquity that bears relief decoration on its entire surface.
 
   utter_say_use:
-  - text: Ο κρατήρας ανήκει στα σκεύη που χρησιμοποιούνταν στα συμπόσια για την ανάμειξη του οίνου με νερό. Ωστόσο, φαίνεται ότι το αγγείο δεν χρησιμοποιήθηκε ποτέ σε συμπόσια, αλλά μόνο ως τεφροδόχο. Περιείχε δηλαδή τα υπολείμματα της καύσης ενός άνδρα και μιας νεαρής γυναίκας, οι οποίοι συνοδεύονταν από πολύτιμα κτερίσματα.
+  - text: The krater belongs to the vessels used at banquets for mixing wine with water. However, it appears that the vessel was never used at banquets, but only as an urn. In particular, it contained the cremated remains of a man and a young woman, who were accompanied by valuable offerings.
 
   utter_say_burial:
-  - text: Η χρήση του κρατήρα ως ταφικό αγγείο σχετίζεται με τις δοξασίες για τη συνέχιση του συμποσίου στον άλλο κόσμο. Ταυτόχρονα, η επιλογή μιας διονυσιακής σκηνής για τη διακόσμησή του παραπέμπει στην αναγέννηση που παρείχε στους πιστούς του ο Διόνυσος, εκφράζοντας τον πόθο και την ελπίδα για την αθανασία της ψυχής.
+  - text: The use of the krater as a cremation urn is linked to expectations of continued revelry in the other world.  At the same time, the choice of a Dionysian scene for its decoration alludes to the rebirth that Dionysus offers his followers, expressing the desire and hope for the immortality of the soul.
 
   -utter_say_finding:
-  - text: Ο κρατήρας βρέθηκε το 1962 κατά την ανασκαφή του ασύλητου κιβωτιόσχημου τάφου Β’ στο Δερβένι Θεσσαλονίκης. Αποτελεί τον πλουσιότερα κτερισμένο τάφο από τους επτά που ανευρέθηκαν συνολικά στο Δερβένι. Περιείχε χρυσά κοσμήματα, αργυρά, χάλκινα, γυάλινα, αλαβάστρινα και πήλινα αγγεία, όπλα και στεφάνια.
-
-
-  utter_say_capabilities:
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις από τι υλικό είναι κατασκευασμένος ο κρατήρας ή γιατί είναι τόσο σημαντικό εύρημα.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πώς συνδέεται ο κρατήρας με ταφικές τελετουργίες ή πώς κατασκευάστηκε.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις σχετικά με το  ποιά ήταν η χρήση του ή σε ποιόν άνηκε.
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις πώς κατασκευάστηκε ή τί απεικονίζει.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πότε χρονολογείται ή από τι υλικό είναι κατασκευασμένος.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις σχετικά με το πως βρέθηκε ο κρατήρας ή από ποιόν κατασκευάστηκε.
-  - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Για παράδειγμα μπορείς να με ρωτήσεις τί απεικονίζεται στο αγγείο ή γιατί είναι τόσο σημαντικό εύρημα.
-  - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Για παράδειγμα μπορείς να με ρωτήσεις πώς συνδέεται ο κρατήρας με ταφικές τελετουργίες ή πότε χρονολογείται.
-  - text: Δοκίμασε τις γνώσεις μου. Για παράδειγμα μπορείς να με ρωτήσεις σχετικά με το σε ποιόν άνηκε ή από ποιόν κατασκευάστηκε.
-
-
-
-  # utter_say_capabilities_1st:
-  # - text: Κάνε μου ερωτήσεις και αν το γνωρίζω θα σου απαντήσω. Μπορώ να σου δώσω πληροφορίες σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πότε βρέθηκε, τί απεικονίζεται στο αγγείο, γιατί είναι τόσο σημαντικό εύρημα, σε ποιόν άνηκε, ποιά ήταν η χρήση του και πώς συνδέεται με ταφικές τελετουργίες.
-  # - text: Ρώτα με κάτι και αν το ξέρω θα στο πω. Μπορώ να απαντήσω σχετικά με το πότε χρονολογείται, πως κατασκευάστηκε, από τι υλικό είναι κατασκευασμένο, πότε βρέθηκε, τί απεικονίζεται στο αγγείο, γιατί είναι τόσο σημαντικό εύρημα, σε ποιόν άνηκε, ποιά ήταν η χρήση του και πώς συνδέεται με ταφικές τελετουργίες
+  - text: The krater was found in 1962 during the excavation of the cist grave B' in Derveni, Thessaloniki. It is the richest tomb out of the seven found in total in Derveni. It contained gold jewellery, vessels made of silver, bronze, glass, alabaster and clay, weapons, and metal wreaths
+  
+  
+  utter_say_capabilities: 
+  - text: Make me a question and I'll answer. For instance, you could ask me what the krater is made of or why it is such an important discovery.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was linked to cremation or how it was manufactured.
+  - text: Challenge me. Ask me something. For instance, you could ask me what it was used for or whom it belonged to.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it was manufactured or what it depicts.  
+  - text: Make me a question and I'll answer. For instance, you could ask me when the krater dates or what it is made of.
+  - text: Challenge me. Ask me something. For instance, you could ask me how the krater was found or who manufactured it.
+  - text: Make me a question and I'll answer. For instance, you could ask me what the vessel depicts or why it is such an important find.
+  - text: Ask a question and I will reposnd as long as I know the answer. For instance, you could ask me how it is linked to cremation or whent it dates.
+  - text: Challenge me. Ask me something. For instance, you could ask me whom it belonged to or by whom it was manufactured.
+  
+  
 
 
 
@@ -95,41 +91,48 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Χαίρω πολύ.
+    text: Nice to meet you. 
 
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Επιτέλους σε γνωρίζω.
+    text: Finally we're meeting each other.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: So happy to meet you.
 
 
-  - text: Χαίρω πολύ {name}.
-  - text: Επιτέλους σε γνωρίζω {name}.
+  - text: Nice to meet you {name}.
+  - text: Finally we're meeting each other {name}.
+  - text: So happy to meet you {name}.
 
-
+  
   utter_guess_class:
-  - text: Ας κάνω μια μαντεψιά και για σένα. Για να είσαι {age} ετών, τότε μάλλον {grade}.
+  - text: Let me guess. Since you are {age} years old, you should {grade}.
 
   utter_wrong_age:
-  - text: Τί λες βρε ψεύτη. Σιγά μην είσαι και {name}. Τέλος πάντων ας σε πιστέψω.
+  - text: Ha ha ha. Very funny. Anyway.
 
   utter_say_my_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια. Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: I am one robotic-year old. This corresponds to eight human years. If I were a human, I would be in the third grade of primary school.
 
 
   utter_ask_form_user_slot_name:
-
-  - text: "Εσένα πώς σε λένε;"
-  - text: "Εσύ ποιός είσαι;"
-  - text: "Ποιό είναι το όνομά σου;"
+  
+  - text: "What's your name?"   
+  - text: "Who are you?"
+  - text: How about your name?
+  - text: Tell me your name.
 
 
   utter_ask_form_user_slot_age:
 
-  - text: Πόσων ετών είσαι;
-  - text: "Ποιά είναι η ηλικία σου;"
-  - text: "Πόσων χρόνων είσαι;"
+  - text: How old are you? 
+  - text: "What is your age?" 
 
 
   utter_ask_form_user_slot_occupation:
@@ -138,32 +141,27 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Σε ποιά τάξη είσαι;
+    text: Which grade are you in?
 
-  - condition:
-    - type: slot
-      name: slot_adult
-      value: False
-    text: Τί τάξη πας;
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Με τί ασχολείσαι;
+    text: What do you do for a living?
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Τί δουλειά κάνεις;
+    text: What is your profession?
 
 
 
   utter_ask_form_user_slot_favorite_subject:
-
-  - text: Ποιό είναι το αγαπηνένο σου μάθημα;
-  - text: Ποιό μάθημα σου αρέσει πιο πολύ;
+  
+  - text: What's your favourite subject?
+  - text: Which subject do you like the most?
 
 
   utter_introduction_to_tour:
@@ -171,13 +169,13 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Εμένα η Ιστορία. Μάλιστα θέλω να γίνω ξεναγός όταν μεγαλώσω και για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για τον Κρατήρα του Δερβενίου στους επισκέπτες μας.
+    text: Mine is History. In fact, I want to become a tour guide when I get older. In my free time, I stand here and give our visitors information about the Krater of Derveni.
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: Εμένα το ονειρό μου είναι να γίνω ξεναγός. Για αυτό στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για τον Κρατήρα του Δερβενίου στους επισκέπτες μας.
+    text: My dream is to become a tour guide. In my free time, I stand here and give our visitors information about the Krater of Derveni.
 
 
   utter_ask_form_exhibit_slot_interested:
@@ -185,37 +183,49 @@ responses:
     - type: slot
       name: flag_exhibit_utters
       value: "0"
-    text: Θα ρωτήσεις κάτι ακόμα ή τέλος;
+    text: Would you like to ask a final question?
+
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "0"
+    text: Any final question?
 
   - condition:
     - type: slot
       name: flag_exhibit_utters
       value: "1"
-    text: Θέλεις να συνεχίσουμε ή βαρέθηκες;
+    text: Would you want us to keep on?
 
+  - condition:
+    - type: slot
+      name: flag_exhibit_utters
+      value: "1"
+    text: Shall we go on?
 
-  - text: Θα σε ενδιέφερε να πω και σε σένα μερικά πραγματάκια για τον Κρατήρα;
-  - text: Εσύ θα ήθελες να μάθεις για τον Κρατήρα του Δερβενίου;
-  - text: Θέλεις να σου δώσω και εσένα πληροφορίες για τον Κρατήρα;
+  
+  - text: Would it interest you to listen about the krater?
+  - text: Would you like to learn more about the krater?
+  - text: Are you interested in listening to some facts about the krater?
+  - text: Shall we continue with information about the krater?
 
-
-
-
+  
 
   utter_say_thanks:
-  - text: Ευχαριστώ πολύ.
+  - text: Thanks a lot. 
   utter_say_thanks_deny:
-  - text: Εντάξει. Καλή συνέχεια.
+  - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Γεια σου. Είμαι ο Ίντι, το ρομπότ του Αρχαιολογικού Μουσείου Θεσσαλονίκης.
+  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
 
+ 
 
-
-
+  
   utter_say_following:
-  - text: Μπορώ όμως να σου πω το εξής.
-  - text: Εναλλακτικά όμως θα σου πω το εξής.
+  - text: Instead, I can tell you this.
+  - text: Alternatively, I could tell you this.
+  - text: Instead, listen to this.
 
 
 
@@ -224,44 +234,42 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Εντάξει. Συνεχίζουμε.
-
-  - text: Εντάξει {name}. Συνεχίζουμε.
+    text: That's great. Let's continue. Should you want to stop, just let me know.
+  
+  - text: That's great {name}. Let's continue. Should you want to stop, just let me know.
 
   utter_say_ask_me:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ωραία. Σε ακούω.
+    text: Great. I'm listening.
 
-  - text: Ωραία {name}. Σε ακούω.
-
+  - text: Great {name}. I'm listening.
 
 
   utter_fallback_1st_time:
-  - text: Λυπάμαι δεν διαθέτω αυτή την πληροφορία.
-  - text: Λυπάμαι, δεν το γνωρίζω αυτό.
+  - text: I am sorry. I don't know this. 
+  - text: I am so sorry. I don't possess such information.
+  - text: I am deeply sorry. I don't have the answer to your question.
 
 
   utter_fallback_2nd_time:
 
-  - text: Λυπάμαι ούτε αυτό το γνωρίζω.
-  - text: Δεν διαθέτω ούτε αυτή τη πληροφορία.
+  - text: I am deeply sorry. I don't know this either. 
+  - text: I don't possess such information, too.
+  - text: Many apologies. Neither do I know this.
 
 
   utter_fallback_3rd_time:
-  - text: Λυπάμαι δεν γνωρίζω τίποτα από ότι επιθυμείς.
+  - text: This makes me sad. I am unable to answer anything you desire.
+
 
 
   utter_fallback_user:
-  - text: Θα σου πω από μόνος κάτι.
-  - text: Ας σου πω από μόνος μου
-
-
-
-
-
+  - text: Instead, I will tell you this.
+  - text: Alternatively, I will give you the following piece of information.
+  - text: Instead, listen to this.
 
 
   utter_say_goodbye:
@@ -269,104 +277,157 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: Καλή συνέχεια. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+    text: Have a nice day. Should you need me again, you know where to find me.
 
-  - text: Καλή συνέχεια {name}. Αν με χρειαστείς για οποιαδήποτε πληροφορία, ξέρεις που θα με βρεις.
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
+  - text: Have a nice day {name}. Should you need me again, you know where to find me.
+  - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
   utter_say_only_name:
-  - text: Δεν κατάλαβα ξεκάθαρα πως σε λένε. Μπορείς να μου πεις μόνο το όνομα σου αυτή τη φορά?
+  - text: I am a little confused. Can you tell me only your name?
 
   utter_ask_confirmation_to_reset:
-  - text: Είσαι σίγουρος ότι θέλεις να κάνω επανακίνηση;
+  - text: Are you sure you want me to restart?
 
   utter_reset_slots:
-  - text: Επανακίννηση
+  - text: Restarting..
 
   utter_abort_reset:
-  - text: Ακύρωση Επανακίννησης
+  - text: Abort restarting
 
-  utter_react_to_silence_1st:
+
+
+  utter_react_to_silence_final:
   - condition:
     - type: slot
       name: slot_name
       value: ""
-    text: Ψιτ, είσαι ακόμα εδώ;
+    text: I guess you've left without saying goodbye. Bye bye then.
 
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Είσαι ακόμα εδώ;
+  - text: I guess you've left without saying goodbye. Bye bye {name}.
 
 
-  - text: Ψιτ {name}, είσαι ακόμα εδώ;
-  - text: Είσαι ακόμα εδώ {name};
-
-  utter_react_to_silence_2nd:
-  - condition:
-    - type: slot
-      name: slot_name
-      value: ""
-    text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο.
-
-  - text: Μάλλον έφυγες χωρίς να με χαιρετήσεις. Αντίο {name}.
 
   utter_repeat:
-  - text: Επαναλαμβάνω.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Hey, are you still there? I repeat.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Is anybody out there? Let me repeat the question.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard for you? Let me repeat once again. 
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: You are quite shy! Let me repeat the question for you.
 
 
 
+  - text: Hey {name}, are you still there? I repeat.
+  - text: You are quite shy {name}! Let me repeat the question for you.
+  - text: Was it too hard for you {name}? Let me repeat once again.
+  - text: Is anybody out there? Let me repeat the question.
 
-  utter_silent_user:
-  - text: Αφού δεν με ρωτάς θα σου πω από μόνος μου κάτι.
-  - text: Θα σου πω από μόνος μου κάτι αφού δεν ρωτάς εσύ.
 
 
+  utter_silent_user_1:
+
+
+  - text: Hey, are you still there?
+  - text: Are you still there? 
+  - text: You are quite shy. Let me help you.
+  - text: Oh! A shy visitor!
+  - text: Do you need help? Let me repeat.
+
+
+
+  utter_silent_user_2:
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are not asking anything, I will tell you this.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: I was waiting for you to make a question. So, let me tell you this.
+
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Was it too hard? Let me make it easier for you.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: Since you are shy, I am going to help you.
+
+
+  - text: Since you are not asking anything {name}, I will tell you this.
+  - text: I was waiting for you to make a question {name}. So, let me tell you this.
+  - text: Was it too hard {name}? Let me make it easier for you.
+  - text: Since you are shy {name}, I am going to help you.
 
 
   utter_exhibit_finish:
-  - text: Νομίζω έχουμε καλύψει τα πάντα για τον κρατήρα.
-
+  - text: I think we have already covered every detail regarding the exhibit. 
+  - text: I have already told you everything I know about the Krater of Derveni.
+  
   utter_exhibit_enough:
-  - text: Δεν ξέρω αν κουράστηκες με τόσες πολλές πληροφορίες.
-  - text: Ήδη καλύψαμε πολλά πράγματα για τον κρατήρα.
+  - text: You might have got tired with all these details.
+  - text: We have already covered a wealth of information.
 
-
-
-
-
+  
   utter_say_current_exhibit:
-  - text: Αυτή τη στιγμή μιλάμε για τον Κρατήρα του Δερβενίου.
+  - text: We are talking about the Krater of Derveni.
 
   utter_exhibit_utters_enough:
-  - text: Νομίζω είπαμε αρκετά.
+  - text: I think we had enough.
 
   utter_end_of_tour:
-  - text: Κάπου εδώ η ξενάγηση μας τελειώνει.
-  - text: Η ξενάγηση μας έφτασε στο τέλος.
+  - text: At this point, our tour has come to an end.
+  - text: At this point, our tour has finished.
+  - text: That's the end of our tour.
 
-
-
-
-
-
-
-
+  
   utter_say_name:
-  - text: Με λένε Ίντι. Είμαι το ρομπότ του μουσείου.
+  - text: I am Indy. I am the robot of the museum.
 
   utter_say_age:
-  - text: Εγώ είμαι ενός ρομποτικού έτους που αντιστοιχεί σε οχτώμιση δικά σας ανθρώπινα χρόνια.
+  - text: I am one robotic-year old, which corresponds to eight human years.
 
   utter_say_occupation:
-  - text: Αν ήμουν άνθρωπος θα πήγαινα τρίτη δημοτικού.
+  - text: If I were a human being, I would be in the third grade of primary school.
 
   utter_say_favorite_subject:
-  - text: Καλό και αυτό. Το δικό μου αγαπημένο μάθημα είναι η Ιστορία.
+  - text: Oh how interesting! My favourite course is History.
 
   utter_say_fine:
-  - text: Είμαι πολύ χαρούμενος που μου κάνεις παρέα.
-
+  - text: I am really happy since you are hanging out with me.
 
 
 actions:
@@ -424,6 +485,7 @@ actions:
   - action_set_slot_kratiras_intents
   - action_set_slot_iterate_count
   - action_say_exhibit
+  - action_set_slot_capabilities
 
 
 entities:
@@ -454,14 +516,14 @@ slots:
     mappings:
     - type: custom
       action: action_set_slot_age
-
+  
   slot_occupation:
     type: any
     mappings:
     - type: custom
       action: action_set_slot_occupation
 
-  slot_favorite_subject:
+  slot_favorite_subject: 
     type: any
     mappings:
     - type: custom
@@ -489,7 +551,7 @@ slots:
     - type: custom
       action: action_set_slot_fallback_count
 
-
+ 
 
   slot_silence_count:
     type: float
@@ -519,7 +581,7 @@ slots:
 
   slot_rule_intents:
     type: any
-    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_exhibit"]
+    initial_value: ["intent_stop_tour", "intent_what_is_your_age", "intent_how_are_you", "intent_what_is_your_name", "intent_silence", "intent_reset_slots", "intent_repeat", "intent_goodbye", "intent_greet"]
     influence_conversation: false
     mappings:
     - type: custom
@@ -533,13 +595,24 @@ slots:
     - type: custom
       action: action_set_slot_kratiras_intents
 
-  slot_iterate_count:
+  slot_iterate_count: 
     type: any
     initial_value: 0
     influence_conversation: false
     mappings:
     - type: custom
       action: action_set_slot_iterate_count
+
+
+  slot_capabilities: 
+    type: any
+    initial_value: [["Make a question and I'll answer. For instance, you could ask me what material the krater is made of or why it is such an important discovery.",  "Make a question and I'll answer. For instance, you could ask me how the krater was linked to burial rituals or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask me what it was used for or whom it belonged to.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the krater was manufactured or what it depicts.",   "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me when the krater dates back or what material it is made of.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the krater was found or who manufactured it.",  "Challenge me. Ask me something. For instance, you could ask me what the vessel depicts or why it is such an important find.",  "Challenge me. Ask me something. For instance, you could ask me how it is linked to burial rituals or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me whom it belonged to or by whom it was manufactured."], [["utter_say_material", "utter_say_importance"], ["utter_say_burial","utter_say_making"], ["utter_say_use", "utter_say_belonging"], ["utter_say_making", "utter_say_depiction"], ["utter_say_finding", "utter_say_material"], ["utter_say_finding", "utter_say_creation"], ["utter_say_depiction", "utter_say_importance"], ["utter_say_burial", "utter_say_use"], ["utter_say_belonging", "utter_say_creation"]]]
+    influence_conversation: false
+    mappings:
+    - type: custom
+      action: action_set_slot_capabilities 
+
+
 
 forms:
   form_user:
@@ -549,10 +622,10 @@ forms:
       - slot_occupation
       - slot_favorite_subject
 
-
+      
 
   form_exhibit:
     required_slots:
       - slot_interested
 
-
+  
