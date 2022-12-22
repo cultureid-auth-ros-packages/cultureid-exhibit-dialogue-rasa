@@ -270,7 +270,7 @@ responses:
   - condition:
     - type: slot
       name: slot_name
-      value: None
+      value: Null
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
@@ -295,6 +295,12 @@ responses:
     - type: slot
       name: slot_name
       value: ""
+    text: I guess you've left without saying goodbye. Bye bye then.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: Null
     text: I guess you've left without saying goodbye. Bye bye then.
 
   - text: I guess you've left without saying goodbye. Bye bye {name}.
