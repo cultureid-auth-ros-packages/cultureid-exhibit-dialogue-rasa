@@ -217,7 +217,7 @@ responses:
   - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
+  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
 
  
 
@@ -285,12 +285,6 @@ responses:
       value: ""
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
-  - condition:
-    - type: slot
-      name: slot_name
-      value: Null
-    text: Enjoy your visit at the museum. I'll be available for any information you may need.
-
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
   - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
@@ -313,12 +307,6 @@ responses:
     - type: slot
       name: slot_name
       value: ""
-    text: I guess you've left without saying goodbye. Bye bye then.
-
-  - condition:
-    - type: slot
-      name: slot_name
-      value: Null
     text: I guess you've left without saying goodbye. Bye bye then.
 
   - text: I guess you've left without saying goodbye. Bye bye {name}.

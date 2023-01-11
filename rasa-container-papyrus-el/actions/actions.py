@@ -337,9 +337,6 @@ class SayBye(Action):
 
         slot_name = tracker.slots.get("slot_name")
 
-        if slot_name == None:
-            slot_name = ""
-
         dispatcher.utter_message(response="utter_say_goodbye", name = slot_name)
         return [AllSlotsReset(),Restarted()]
 
@@ -577,11 +574,9 @@ class ActionSetSlotName(Action):
                 if intent in rule_intents:
                     return []
 
-                papyrus_intents = tracker.slots.get("slot_papyrus_intents")
-                if intent in papyrus_intents:
-                   return []
-                if (intent=="intent_exhibit") or (intent=="intent_ask_current_exhibit"):
-                    return []
+                #papyrus_intents = tracker.slots.get("slot_papyrus_intents")
+                #if intent in papyrus_intents:
+                #    return []
 
                 
                 # text = latest_message["text"]
@@ -627,12 +622,11 @@ class ActionSetSlotAge(Action):
                 if intent in rule_intents:
                     return []
 
-                papyrus_intents = tracker.slots.get("slot_papyrus_intents")
-                if intent in papyrus_intents:
-                   return []
-                if (intent=="intent_exhibit") or (intent=="intent_ask_current_exhibit"):
-                    return []
-                
+                #papyrus_intents = tracker.slots.get("slot_papyrus_intents")
+                #if intent in papyrus_intents:
+                #    return []
+
+
                 if intent == "intent_age":
 
                     entities = latest_message["entities"]
@@ -1312,12 +1306,8 @@ class ActionValidateAction(Action):
         slot_interested = tracker.slots.get("slot_interested")
         
         if  (slot_interested==None): 
-            
-            bot_response = "Στον ελεύθερό μου χρόνο στέκομαι εδώ και δίνω πληροφορίες για τον Πάπυρο του Δερβενίου στους επισκέπτες μας."
-            dispatcher.utter_message(text=bot_response)
-            return [FollowupAction("form_exhibit")]   
-
-            # return [SlotSet("slot_interested", True), FollowupAction("form_exhibit")]               
+                        
+            return [SlotSet("slot_interested", True), FollowupAction("form_exhibit")]               
         else:
 
             return []

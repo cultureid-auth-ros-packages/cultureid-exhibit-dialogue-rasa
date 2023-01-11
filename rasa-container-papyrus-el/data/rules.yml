@@ -141,7 +141,6 @@ rules:
   - intent: intent_exhibit
   - action: action_validate_intents
   - action: action_say_capabilities
-  # - action: action_say_exhibit
 
 
 - rule: current_exhibit
