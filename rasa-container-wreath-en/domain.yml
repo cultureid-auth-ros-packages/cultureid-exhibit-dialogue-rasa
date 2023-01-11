@@ -151,13 +151,13 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Mine is History. In fact, I want to become a tour guide when I get older. In my free time, I stand here and give our visitors information about the golden myrtle wreath.
+    text: Mine is History. In fact, I want to become a tour guide when I grow up. In my free time, I stand here and give our visitors information about the Golden Myrtle Wreath.
 
   - condition:
     - type: slot
       name: slot_adult
       value: True
-    text: My dream is to become a tour guide. In my free time, I stand here and give our visitors information about the golden myrtle wreath.
+    text: My dream is to become a tour guide. In my free time, I stand here and give our visitors information about the Golden Myrtle Wreath.
 
 
   utter_ask_form_exhibit_slot_interested:
@@ -199,7 +199,7 @@ responses:
   - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
+  - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
 
  
 
@@ -267,6 +267,12 @@ responses:
       value: ""
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
+  - condition:
+    - type: slot
+      name: slot_name
+      value: Null
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
   - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
@@ -289,6 +295,12 @@ responses:
     - type: slot
       name: slot_name
       value: ""
+    text: I guess you've left without saying goodbye. Bye bye then.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: Null
     text: I guess you've left without saying goodbye. Bye bye then.
 
   - text: I guess you've left without saying goodbye. Bye bye {name}.
@@ -395,6 +407,36 @@ responses:
   - text: At this point, our tour has finished.
   - text: That's the end of our tour.
 
+
+
+
+  utter_say_already_told:
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: But I have already told you this. Let me tell you something we haven't talked about.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: We have already refered to this. Let me share new information.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: I think we have talked about this. How about something new!
+
+
+  - text: But I have already told you this {name}. Let me tell you something we haven't talked about.
+  - text: We have already refered to this {name}. Let me share new information.
+  - text: I think we have talked about this {name}. How about something new!
+
+
+
   
   utter_say_name:
   - text: I am Indy. I am the robot of the museum.
@@ -466,6 +508,7 @@ actions:
   - action_set_slot_iterate_count
   - action_say_exhibit
   - action_set_slot_capabilities
+  - action_say_already_told
 
 
 entities:
@@ -584,7 +627,7 @@ slots:
 
   slot_capabilities: 
     type: any
-    initial_value: [["Make a question and I'll answer. For instance, you could ask me how the museum acquired the wreath or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask me how the wreath is related to burial rituals.",  "Make a question and I'll answer. For instance, you could ask me when it dates back or what material it is made of.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me what material the wreath is made of or why it is an important find.",   "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me why golden wreaths were used in ancient times or how they were linked to burial rituals.",  "Ask me a question and I will respond as long as I know the answer. For instance, you could ask me how the wreath was acquired by the museum or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me how it was manufactured or when it dates back.",  "Challenge me. Ask me something. For instance, you could ask me what material it is made of or for what reason golden wreaths were used in ancient times.",  "Challenge me. Ask me something. For instance, you could ask me why it is such an important discovery or how it was acquired by the museum."], [["utter_say_acquisition", "utter_say_creation"], ["utter_say_burial"], ["utter_say_dating", "utter_say_material"], ["utter_say_material", "utter_say_importance"], ["utter_say_use", "utter_say_burial"], ["utter_say_acquisition", "utter_say_dating"], ["utter_say_creation", "utter_say_dating"], ["utter_say_material", "utter_say_use"], ["utter_say_importance", "utter_say_acquisition"]]]
+    initial_value: [["Make a question. For instance, you could ask me how the wreath was manufactured.",  "Make a question. For instance, you could ask me how the wreath is related to burial rituals.",  "Make a question. For instance, you could ask me what material it is made of.",  "Ask me a question. For instance, you could ask me why it is such an important find.",   "Ask me a question. For instance, you could ask me why golden wreaths were used in ancient times.",  "Ask me a question. For instance, you could ask me how the wreath was acquired by the museum.",  "Challenge me. Ask me something. For instance, you could ask me when it dates back."], [["utter_say_creation"], ["utter_say_burial"], ["utter_say_material"], ["utter_say_importance"], ["utter_say_use"], ["utter_say_acquisition"], ["utter_say_dating"]]]
     influence_conversation: false
     mappings:
     - type: custom

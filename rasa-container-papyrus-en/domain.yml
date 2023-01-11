@@ -177,7 +177,7 @@ responses:
     - type: slot
       name: slot_adult
       value: False
-    text: Mine is History. In fact, I want to become a tour guide when I get older. In my free time, I stand here and give our visitors information about the Papyrus of Derveni.
+    text: Mine is History. In fact, I want to become a tour guide when I grow up. In my free time, I stand here and give our visitors information about the Papyrus of Derveni.
 
   - condition:
     - type: slot
@@ -225,7 +225,7 @@ responses:
   - text: Okay. Have a nice day.
 
   utter_introduce:
-  - text: Hello. I am Indy, the robot of Archaeological Museum of Thessaloniki.
+  - text: Hello. I am Indy, the robot of the Archaeological Museum of Thessaloniki.
 
  
 
@@ -293,6 +293,12 @@ responses:
       value: ""
     text: Enjoy your visit at the museum. I'll be available for any information you may need.
 
+  - condition:
+    - type: slot
+      name: slot_name
+      value: Null
+    text: Enjoy your visit at the museum. I'll be available for any information you may need.
+
   - text: Have a nice day {name}. Should you need me again, you know where to find me.
   - text: Enjoy your visit at the museum {name}. I'll be available for any information you may need.
 
@@ -315,6 +321,12 @@ responses:
     - type: slot
       name: slot_name
       value: ""
+    text: I guess you've left without saying goodbye. Bye bye then.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: Null
     text: I guess you've left without saying goodbye. Bye bye then.
 
   - text: I guess you've left without saying goodbye. Bye bye {name}.
@@ -422,6 +434,36 @@ responses:
   - text: That's the end of our tour.
 
   
+
+  utter_say_already_told:
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: But I have already told you this. Let me tell you something we haven't talked about.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: We have already refered to this. Let me share new information.
+
+  - condition:
+    - type: slot
+      name: slot_name
+      value: ""
+    text: I think we have talked about this. How about something new!
+
+
+  - text: But I have already told you this {name}. Let me tell you something we haven't talked about.
+  - text: We have already refered to this {name}. Let me share new information.
+  - text: I think we have talked about this {name}. How about something new!
+
+
+
+
+
   utter_say_name:
   - text: I am Indy. I am the robot of the museum.
 
@@ -495,6 +537,7 @@ actions:
   - action_set_slot_iterate_count
   - action_say_exhibit
   - action_set_slot_capabilities
+  - action_say_already_told
 
 
 entities:
@@ -614,7 +657,7 @@ slots:
 
   slot_capabilities: 
     type: any
-    initial_value: [["Make a question and I'll answer. For instance, you could ask me where the papyrus is exhibited or who its author is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me how the papyrus was manufactured or where it was found.",  "Challenge me. Ask me something. For instance, you could ask about the dimensions of the papyrus or why it is such an important find.",  "Make a question and I'll answer. For instance, you could ask me when the papyrus was found or what its content is about.",   "Ask a question and I will respond as long as I know the answer. For instance, you could ask me by whom the papyrus was found or what language is used.",  "Challenge me. Ask me something. For instance, you could ask why the papyrus is such an important find or how it was manufactured.",  "Make a question and I'll answer. For instance, you could ask where it is exhibited or what its size is.",  "Ask a question and I will respond as long as I know the answer. For instance, you could ask me when it was found or by whom it was written.",  "Challenge me. Ask me something. For instance, you could ask what the content of the papyrus is about or in which language it was written."], [["utter_say_exhibition", "utter_say_writer"], ["utter_say_making","utter_say_finding"], ["utter_say_size", "utter_say_importance"], ["utter_say_finding", "utter_say_importance"], ["utter_say_finding", "utter_say_language"], ["utter_say_importance", "utter_say_making"], ["utter_say_exhibition", "utter_say_size"], ["utter_say_finding", "utter_say_writer"], ["utter_say_content", "utter_say_language"]]]
+    initial_value: [["Make a question. For instance, you could ask me by whom it was written.",  "Ask a question. For instance, you could ask where the papyrus is exhibited.",  "Challenge me. Ask me something. For instance, you could ask about the dimensions of the papyrus.", "Challenge me. Ask me something. For instance, you could ask why the papyrus is such an important find.", "Ask a question. For instance, you could ask me in which language it was written.",      "Make a question. For instance, you could ask how the papyrus was manufactured.",  "Ask a question. For instance, you could ask when the papyrus dates back.",  "Make a question. For instance, you could ask me when the papyrus was found.",   "Challenge me. Ask me something. For instance, you could ask what the content of the papyrus is about."], [["utter_say_writer"], ["utter_say_exhibition"], ["utter_say_size"], ["utter_say_importance"], ["utter_say_language"], ["utter_say_making"], ["utter_say_creation"], ["utter_say_finding"], ["utter_say_content"]]]
     influence_conversation: false
     mappings:
     - type: custom
